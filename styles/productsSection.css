@@ -1,0 +1,447 @@
+:root {
+    --green1: #C3F040;
+    --green2: #88BC07;
+    --green3: #08AC2B;
+    --green4: #078E22;
+    --green5: #234A42;
+    --blanco: #FFFFFF;
+    --gris: #F1F1F1;
+}
+
+.productsSection {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    margin-top: 100vh;
+}
+
+/** Background waves **/
+.wavesBg {
+    margin-top: -10vh;
+    left: 0vw;
+    border-top: 300px solid var(--green3);
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavesBg svg {
+    position: relative;
+    display: block;
+    width: 100vw;
+}
+
+.custom-shape-divider-top {
+    position: absolute;
+    top: -10vh;
+    left: -6vw;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100vw + 1.3px);
+    height: 650px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: var(--green4);
+}
+/** ····················· **/
+
+/** PRODUCTS SECTION **/
+.productsWrapper {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -15vh;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+/**info left section**/
+.infoGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.iconInfoProduct{
+    margin-top: 15vh;
+    width: 18vw;
+    height: 13vh;
+    border-radius: 0 60px 60px 0;
+    background-color: var(--green3);
+}
+
+.iconImg{
+    margin-top: -17.5vh;
+    margin-left: 10vw;
+    height: auto;
+    width: 70px;
+    object-fit: contain;
+}
+
+.infoTitle1{
+    margin-top: 5vh;
+    margin-left: 7vw;
+    color: var(--green1);
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+.infoTitle2{
+    margin-top: -2.7vh;
+    margin-left: 7vw;
+    color: var(--green1);
+    font-family: 'Roboto regular';
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.infoText{
+    margin-top: 5vh;
+    margin-left: 7vw;
+    text-align: justify;
+    margin-right: 7vw;
+    font-size: 1vw;
+    color:  var(--gris);
+}
+
+.infoButton .btnInfo{
+    margin-top: 4vh;
+    margin-left: 7.5vw;
+    padding: 0.5vh 3vw;
+    border-radius: 50px;
+    background-color: #234A42;
+    color: var(--green1);
+    font-family: 'Roboto regular';
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.infoButton .btnInfo:hover{
+    background-color: var(--green5);
+    transform: scale(1.1);
+    color: #C3F040;
+}
+/***********************/
+/**cards right section**/
+.cardsGrid {
+    padding-right: 100px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius: 43px;
+    height: 56.4vh;
+    text-align: center;
+    box-shadow: 1vw 1vw 2vw rgba(1, 1,1, 0.5);
+}
+
+.grid-item:hover{
+    border: 3px solid var(--green2);
+}
+
+.grid-item > img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.infoCard{
+    /*
+    3214429021 Toberin
+    3108790906 Nueva Zelanda
+    */
+    position: relative;
+    height: 20vh;
+    width: auto;
+    margin-top: -12.2vh;
+    padding: 2.5vh 2.5vw;
+    border-radius: 40px;
+    background-color: var(--blanco);
+}
+
+.infoCardTitle{
+    text-align: start;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: var(--green3);
+}
+
+.infoCardText{
+    color: grey;
+    font-size: 0.8vw;
+    text-align: justify;
+}
+
+.infoCard .btn-success{
+    background-color: var(--green3);
+    border: none;
+    font-size: 0.8vw;
+    font-weight: 700;
+    padding: 0.2vh 1.5vw;
+    border-radius: 100px;
+}
+
+.infoCard .btn-success:hover{
+    background-color: var(--green3);
+    transform: scale(1.1);
+}
+/***************************/
+/** FIN PRODUCTS SECTION **/
+
+
+/** RESPONSIVE **/
+@media screen and (max-width: 600px) {
+
+    /***### SVG BG SECTION ###***/
+    .wavesBg {
+        position: absolute;
+        border-top: 300px solid var(--green3);
+    }
+
+    .wavesBg svg {
+        margin-top: -25rem;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    .custom-shape-divider-top svg {
+        width: calc(100% + 1.3px);
+        height: 200px;
+    }
+
+    .productsWrapper{
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /***### FIN SVG BG SECTION ###***/
+    /********************************/
+    /***### INFO LEFT SECTION ###***/
+    .infoGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .iconInfoProduct{
+        margin-left: -0.5rem;
+        margin-top: 6vh;
+        width: 25vw;
+    }
+
+    .iconImg{
+        margin-left: 2vw;
+        width: 50px;
+    }
+
+    .infoTitle1{
+        margin-top: -12vh;
+        margin-right: 1rem;
+        text-align: end;
+        font-size: 2rem;
+    }
+
+    .infoTitle2{
+        margin-top: -2vh;
+        margin-right: 1rem;
+        text-align: end;
+        font-size: 2rem;
+    }
+
+    .infoText{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1vh;
+        font-size: 0.8rem;
+    }
+
+    .infoButton .btnInfo{
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    /***###FIN INFO LEFT SECTION###***/
+    .cardsGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .grid-item > img{
+        max-width: 70px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 40px;
+    }
+
+    .infoCard{
+        padding: 1.5rem 2rem;
+    }
+
+    .infoCardTitle{
+        font-size: 1rem;
+    }
+
+    .infoCardText{
+        font-size: 0.7rem;
+    }
+
+    .infoCard .btn-success{
+        margin-top: -1.5rem;
+        font-size: 1rem;
+        padding: 0 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px){
+    /***### SVG BG SECTION ###***/
+    .wavesBg{
+        margin-top: -42.5rem;
+        border-top: 150px solid var(--green3);
+    }
+
+    .wavesBg svg{
+        position: absolute;
+        margin-top: -18rem;
+    }
+
+    .custom-shape-divider-top svg{
+        margin-top: -15rem;
+        height: 200px;
+    }
+
+    /***### FIN SVG BG SECTION ###***/
+    /********************************/
+    /*** grid ***/
+    .productsWrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+    /*** end grid ***/
+    /***### INFO LEFT SECTION ###***/
+    .iconInfoProduct{
+        margin-left: -2rem;
+        margin-top: -37rem;
+        background-color: var(--green4);
+        width: 7rem;
+    }
+    .iconImg{
+        margin-left: 1rem;
+    }
+
+    .infoTitle1{
+        margin-top: -5rem;
+        text-align: end;
+        font-size: 2rem;
+    }
+    .infoTitle2{
+        text-align: end;
+        font-size: 2rem;
+    }
+
+    .infoText{
+        margin-top: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .infoButton .btnInfo{
+        font-size: 1rem;
+    }
+    /***###FIN INFO LEFT SECTION###***/
+    /***###########################***/
+    /***### Cards section ###***/
+
+    .cardsGrid{
+        display: grid;
+        margin-top: -18rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        padding: 2rem;
+    }
+
+}
+
+@media (min-width: 961px) {
+        /***### SVG BG SECTION ###***/
+    .wavesBg{
+        border-top: 300px solid var(--green3);
+    }
+
+    .wavesBg svg{
+        margin-top: -10rem;
+        position: absolute;
+        
+    }
+
+    .custom-shape-divider-top svg{
+        height: 500px;
+    }
+
+    /***### FIN SVG BG SECTION ###***/
+    /********************************/
+    /*** grid ***/
+    .productsWrapper{
+        grid-template-columns: 40vw 60vw;
+    }
+    /*** end grid ***/
+    /***### INFO LEFT SECTION ###***/
+    .iconInfoProduct{
+        width: 10rem;
+    }
+
+    .iconImg{
+        margin-left: 5rem;
+    }
+
+    .infoTitle1{
+        margin-top: 1rem;
+        text-align: start;
+        font-size: 2rem;
+    }
+    .infoTitle2{
+        text-align: start;
+        font-size: 2rem;
+    }
+
+    .infoText{
+        margin-top: 1rem;
+        margin-right: 2rem;
+        margin-left: 4.5rem;
+        text-align: justify;
+        font-size: 0.7rem;
+    }
+
+    .infoButton .btnInfo{
+        font-size: 1rem;
+    }
+    /***###FIN INFO LEFT SECTION###***/
+    /***###########################***/
+    /***### Cards section ###***/
+
+    .cardsGrid{
+        display: grid;
+        margin-top: -1rem;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 310px));
+        padding: 0;
+        place-content: center;
+    }
+
+    .infoCardText{
+        font-size: 0.7rem;
+    }
+
+}

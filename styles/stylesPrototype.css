@@ -1,0 +1,38 @@
+:root{
+    --green1: #C3F040;
+    --green2: #88BC07;
+    --green3: #08AC2B;
+    --green4: #078E22;
+    --green5: #234A42;
+    --blanco: #FFFFFF;
+    --gris: #F1F1F1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+@font-face {
+    font-family: 'Kusanagi';
+    src: url('../fonts/Kusanagi.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto regular';
+    src: url('../fonts/Roboto-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto black';
+    src: url('../fonts/Roboto-Black.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
