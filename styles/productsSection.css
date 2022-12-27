@@ -278,9 +278,9 @@
     }
 
     .grid-item > img{
-        max-width: 70px;
+        width: 520px;
         height: auto;
-        object-fit: contain;
+        object-fit: cover;
         border-radius: 40px;
     }
 
