@@ -28,7 +28,7 @@
     margin: auto;
     border: 3px solid var(--green2);
     border-radius: 100%;
-    /*animation: rotation 20000ms linear infinite;*/
+    animation: rotation 20000ms linear infinite;
 }
 
 .dot1 {
@@ -74,7 +74,7 @@
 
 .innerImg {
     position: absolute;
-    margin-top: 49rem;
+    margin-top: .5rem;
     margin-left: 6.5rem;
     display: grid;
     place-content: center;
@@ -166,12 +166,13 @@
     margin-top: -6rem;
     font-family: 'Roboto black';
     font-size: 1.5rem;
-    color: grey;
+    color: var(--blanco);
 }
 
 .bottomDivider {
     width: 100vw;
     height: auto;
+    margin-top: -50vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -289,10 +290,6 @@
 
     .iconTitle {
         margin-top: -15vh;
-    }
-
-    .bottomDivider{
-        border-bottom: solid 50vh var(--green3);
     }
 
 }
