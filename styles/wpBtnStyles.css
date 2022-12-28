@@ -1,0 +1,118 @@
+.wpButton {
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    margin-left: 3vw;
+    margin-top: -5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgb(37, 211, 102);
+    border-radius: 50%;
+}
+
+.wpButton::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 0.5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgb(37, 211, 102);
+    -webkit-animation: pulsation1 4s ease infinite;
+            animation: pulsation1 4s ease infinite;
+    z-index: 0;
+}
+
+.wpButton::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 0.5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgb(37, 211, 102);
+    -webkit-animation: pulsation2 4s ease infinite;
+            animation: pulsation2 4s ease infinite;
+    z-index: 0;
+}
+
+.wpButton a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+}
+
+@keyframes pulsation1 {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: scale(3);
+                transform: scale(3);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes pulsation2 {
+    0%, 20% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: scale(3);
+                transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes pulsation2 {
+    0%, 20% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: scale(3);
+                transform: scale(3);
+        opacity: 0;
+    }
+}
