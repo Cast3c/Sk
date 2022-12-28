@@ -12,7 +12,7 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    margin-top: 200vh;
+    margin-top: 100vh;
     display: grid;
     grid-template-columns: 45vw 55vh;
 }
@@ -163,7 +163,7 @@
 
 .iconTitle {
     position: relative;
-    margin-top: -6rem;
+    margin-top: -5rem;
     font-family: 'Roboto black';
     font-size: 1.5rem;
     color: var(--blanco);
@@ -172,7 +172,7 @@
 .bottomDivider {
     width: 100vw;
     height: auto;
-    margin-top: -50vh;
+    margin-top: -40vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -291,7 +291,10 @@
     .iconTitle {
         margin-top: -15vh;
     }
-
+    
+    .bottomDivider{
+        border-bottom: solid 500px var(--green4);
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width:960px){
