@@ -287,3 +287,59 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 600px){
+    .footer{
+        height: 80vh;
+        margin-top: 750vh;
+        grid-template-columns: repeat(auto-fit, minmax(70vw ,1fr));
+    }
+
+    .footerColumn1{
+        height: 20vh;
+        border-right: none;
+        border-bottom: solid 2px var(--green4);
+    }
+
+    .wpNumber a{
+        margin-left: 8vw;
+    }
+
+    .facebook a{
+        margin-left: 8vw;
+    }
+
+    .instagram a{
+        margin-left: 8vw;
+    }
+
+    .footerColumn2{
+        margin-top: -5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        height: 20vh;
+        border-right: none;
+        border-bottom: solid 2px var(--green4);
+    }
+
+    .ubicacion a{
+        margin-left: 8vw;
+    }
+
+    .correo a{
+        margin-left: 8vw;
+    }
+
+    .siteIcon{
+        margin-left: 2vw;
+    }
+
+    .web a{
+        margin-left: 10vw;
+    }
+
+    .footerColumn3{
+        margin: auto;
+        margin-top: -5vh;
+    }
+    
+}
