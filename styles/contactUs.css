@@ -111,9 +111,55 @@
     border-left: solid 2px var(--green2);
 }
 
+.blogSuscribe{
+    margin-top: 1vh;
+    margin-left: 30vw;
+    width: 35vw;
+    height: 10vh;
+    padding-top: 0;
+    border-radius: 25px;
+    background-color: var(--green2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogImgCont{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: -28vw;
+    background-color: var(--green1);
+    border-radius: 20px;
+    box-shadow: 0vw 0vw 1vw rgba(1, 1, 1, .5);
+    display: grid;
+    place-content: center;
+}
+
+.blogImg{
+    margin-top: 0vh;
+    margin-left: 0vw;
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+.labelInputBlog{
+    margin-top: 0vh;
+    margin-left: 7vw;
+    width: 10vw;
+    color: var(--blanco);
+    font-family: 'Roboto regular';
+    font-size: 1rem;
+}
+
+.blogForm{
+    width: 15vw;
+    margin-left: 1vw;
+}
 @media screen and (max-width: 600px){
     .contactUs{
-        height: 190vh;
+        height: 180vh;
         margin-top: 570.7vh;
     }
 
@@ -170,5 +216,26 @@
     .contentCard{
         margin: 5vw;
         width: 90vw;
+    }
+
+    .blogSuscribe{
+        width: 90vw;
+        margin-top: -5vh;
+        margin-left: 5vw;
+    }
+
+    .blogImgCont{
+        margin-left: -70vw;
+    }
+
+    .labelInputBlog{
+        width: 20vw;
+        margin-left: 15vw;
+        font-size: 0.7rem;
+    }
+
+    .blogForm{
+        width: 40vw;
+        margin-left: 5vw;
     }
 }
