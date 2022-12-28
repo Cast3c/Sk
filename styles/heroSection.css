@@ -336,7 +336,7 @@
     
     .hero-content{
         width: 100vw;
-        height: 60vh;
+        height: 100vh;
         position: absolute;
         border-radius: 10vw 0 0 0;
         background-color: var(--blanco);
@@ -348,7 +348,7 @@
         font-family:'Roboto black';
         color: rgb(0,142,3);
         padding-left: 5vw;
-        padding-top: 39vh;
+        padding-top: 30vh;
         margin-top: -10vh;
         font-size: 4vw;
     }
@@ -367,7 +367,7 @@
         display: flexbox;
         gap: 1vw;
         width: 4.5vw;
-        height: 20vh;
+        height: auto;
         margin-top: -45vh;
         margin-left: 93vw;
         border-radius: 2vw 0 0 2vw;
@@ -404,7 +404,7 @@
     }
     
     .botonHero{
-        margin-top: 25vh;
+        margin-top: 20vh;
         margin-left: 5vw;
         font-family: 'Roboto black';
     }
