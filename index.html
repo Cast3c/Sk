@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/productsSection.css">
     <link rel="stylesheet" href="./styles/aboutUs.css">
     <link rel="stylesheet" href="./styles/contactUs.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4b71595393.js" crossorigin="anonymous"></script>
@@ -18,7 +19,7 @@
 <body>
     <div class="hero">
         <div class="navi">
-            <nav class="navbar">
+            <nav class="navbar navbar-expand">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">SANITY KING</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -28,16 +29,16 @@
                     <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
+                                <a class="nav-link" href="#servicios">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nosotros</a>
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link">Blog</a>
@@ -47,7 +48,7 @@
                 </div>
             </nav>
         </div>
-        <div class="hero-content">
+        <div class="hero-content" id="home">
             <div class="brandName">SANITY KING</div>
             <div class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Porttitor eget dolor morbi non. Justo eget magna fermentum iaculis eu.
@@ -93,7 +94,7 @@
                 </path>
             </svg>
         </div>
-        <div class="productsWrapper">
+        <div class="productsWrapper" id="servicios">
             <div class="infoGrid">
                 <div class="itemInfo">
                     <div class="iconInfoProduct">
@@ -156,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <div class="aboutUs">
+        <div class="aboutUs" id="nosotros">
             <div class="rightCircle">
                 <div class="outterCircle">
                     <div class="dot1"></div>
@@ -228,7 +229,7 @@
             </div>
         </div>
     </div>
-    <div class="contactUs">
+    <div class="contactUs" id="contacto">
         <div class="contactTitle">
             CONTACTENOS
         </div>
@@ -288,6 +289,70 @@
             <form  class="blogForm" action="" method="post">
                 <input class="form-control" type="email" name="" id="" placeholder="Mail">
             </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerColumn1">
+            <div class="titleColumn1">
+                Redes Sociales
+            </div>
+            <div class="column1Line"></div>
+            <div class="wpNumber">
+                <span class="wpIcon">
+                    <img src="./media/Iconos/Recurso10.png" alt="">
+                </span>
+                <p><a href="">(+57)3157845290</a></p>
+            </div>
+            <div class="facebook">
+                <span class="faceIcon">
+                    <img src="./media/Iconos/Recurso12.png" alt="">
+                </span>
+                <p><a href="">SanityKing</a></p>
+            </div>
+            <div class="instagram">
+                <span class="instaIcon">
+                    <img src="./media/Iconos/Recurso14.png" alt="">
+                </span>
+                <p><a href="">SanityKing</a></p>
+            </div>
+        </div>
+        <div class="footerColumn2">
+            <div class="titleColumn2">
+                Contacto
+            </div>
+            <div class="column1Line"></div>
+            <div class="ubicacion">
+                <span class="ubicIcon">
+                    <img src="./media/Iconos/Recurso9.png" alt="">
+                </span>
+                <p><a href="#">Cajica, Cundinamarca-Colombia</a></p>
+            </div>
+            <div class="correo">
+                <span class="mailIcon">
+                    <img src="./media/Iconos/Recurso11.png" alt="">
+                </span>
+                <p><a href="">sanityking@gmail.com</a></p>
+            </div>
+            <div class="web">
+                <span class="siteIcon">
+                    <img src="./media/Iconos/Recurso13.png" alt="">
+                </span>
+                <p><a href="">www.sanityking.com</a></p>
+            </div>
+        </div>
+        <div class="footerColumn3">
+            <div class="titleColumn3">
+                Colombia 2022
+            </div>
+            <div class="brand">
+                <p><a href="">Sanity King - Saneamiento Ambiental S.A.S.</a></p>
+            </div>
+            <div class="politicas">
+                <p><a href="">Politicas de privacidad</a></p>
+            </div>
+            <div class="condiciones">
+                <p><a href="">Terminos y condiciones</a></p>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

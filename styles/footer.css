@@ -1,0 +1,289 @@
+:root {
+    --green1: #C3F040;
+    --green2: #88BC07;
+    --green3: #08AC2B;
+    --green4: #078E22;
+    --green5: #234A42;
+    --blanco: #FFFFFF;
+    --gris: #F1F1F1;
+}
+
+.footer{
+    width: 100vw;
+    height: 40vh;
+    padding-top: 7vh;
+    padding-bottom: 3vh;
+    background-color: var(--green5);
+    position: absolute;
+    margin-top: 405vh;
+    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+}
+
+.footerColumn1{
+    margin-left: 10vw;
+    margin-right: 8vw;
+    border-right: solid 2px var(--green4);
+}
+
+.titleColumn1{
+    color: var(--gris);
+    font-size: 0.8rem;
+}
+
+.column1Line{
+    width: 30px;
+    margin-top: 1vh;
+    border-bottom: 2px solid var(--green1);
+}
+
+.wpNumber{
+    width: 10vw;
+    margin-top: 2vh;
+}
+
+.wpIcon{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    margin-top: -22.5vh;
+}
+
+.wpIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.wpNumber a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 2vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.wpNumber a:hover{
+    color: var(--gris);
+    text-decoration: underline;
+}
+
+.facebook{
+    margin-top: -1vh;
+}
+
+.faceIcon{
+    width: 10px;
+    height: 10px;
+    margin-top: -22vh;
+    position: absolute; 
+}
+
+.faceIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.facebook a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 2vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.facebook a:hover{
+    color: var(--gris);
+    text-decoration: underline;
+}
+
+.instagram{
+    margin-top: -1vh;
+}
+
+.instaIcon{
+    width: 18px;
+    height: 18px;
+    margin-top: -22vh;
+    position: absolute; 
+}
+
+.instaIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.instagram a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 2vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.instagram a:hover{
+    color: var(--gris);
+    text-decoration: underline;
+}
+
+.footerColumn2{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-right: solid 2px var(--green4);
+}
+
+.titleColumn2{
+    color: var(--gris);
+    font-size: 0.8rem;   
+}
+
+.ubicacion{
+    margin-top: 2vh;
+}
+
+.ubicIcon{
+    width: 18px;
+    height: 18px;
+    margin-top: -22vh;
+    position: absolute;
+}
+
+.ubicIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.ubicacion a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 2vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.ubicacion a:hover{
+    color: var(--gris);
+    text-decoration: underline;
+}
+
+.correo{
+    margin-top: -1vh;
+}
+
+.mailIcon{
+    width: 18px;
+    height: 18px;
+    margin-top: -22vh;
+    position: absolute;
+}
+
+.mailIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.correo a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 2vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.correo a:hover{
+    color: var(--gris);
+    text-decoration: underline;   
+}
+
+.web{
+    margin: -1vh;
+}
+
+.siteIcon{
+    width: 18px;
+    height: 18px;
+    margin-top: -22vh;
+    margin-left: 0.5vw;
+    position: absolute; 
+}
+
+.siteIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.web a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 2.5vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.web a:hover{
+    color: var(--gris);
+    text-decoration: underline; 
+}
+
+.titleColumn3{
+    color: var(--gris);
+    font-size: 0.8rem;
+}
+
+.brand{
+    margin-top: 2vh;
+}
+
+.brand a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 0vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.brand a:hover{
+    color: var(--gris);
+    text-decoration: underline; 
+}
+
+.politicas{
+    margin-top: -1vh;
+}
+
+.politicas a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 0vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.politicas a:hover{
+    color: var(--gris);
+    text-decoration: underline;  
+}
+
+.condiciones{
+    margin-top: -1vh;
+}
+
+.condiciones a{
+    color: var(--gris);
+    font-size: .6rem;
+    margin-left: 0vw;
+    padding-top: 0.5vh;
+    text-decoration: none;
+}
+
+.condiciones a:hover{
+    color: var(--gris);
+    text-decoration: underline;
+}
+
