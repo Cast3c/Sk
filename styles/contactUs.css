@@ -11,7 +11,7 @@
 .contactUs {
     position: absolute;
     width: 100vw;
-    height: 190vh;
+    height: 95vh;
     margin-top: 305vh;
     background-color: var(--green4);
     z-index: 0;
@@ -113,7 +113,8 @@
 
 @media screen and (max-width: 600px){
     .contactUs{
-        margin-top: 575vh;
+        height: 190vh;
+        margin-top: 570.7vh;
     }
 
     .contactTitle{
