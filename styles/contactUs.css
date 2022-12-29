@@ -238,4 +238,12 @@
         width: 40vw;
         margin-left: 5vw;
     }
+
+}
+
+@media (min-width: 961px){
+
+    .blogSuscribe{
+        margin-top: 3vh;
+    } 
 }
