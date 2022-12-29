@@ -1,0 +1,267 @@
+:root {
+    --green1: #C3F040;
+    --green2: #88BC07;
+    --green3: #08AC2B;
+    --green4: #078E22;
+    --green5: #234A42;
+    --blanco: #FFFFFF;
+    --gris: #F1F1F1;
+}
+/*-- Boton hero --*/
+#cotizarHero .modal-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--green2);
+    background-color: var(--green3);
+}
+
+#cotizarHero_Title{
+    color: var(--green1);
+    font-family: 'Roboto black';
+    font-size: 2rem;
+}
+
+#cotizarHero .modal-content{
+    background-image: radial-gradient(rgba(7,142,34,0.9), rgba(35,74,66, 0.9));
+}
+
+#cotizarHero .modal-body{
+    padding: 2vh 3vw;
+}
+
+#cotizarHero .modal-body p{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+    text-align: justify;
+}
+
+#cotizarHero .col-form-label{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+}
+
+#cotizarHero .modal-footer{
+    background-color: var(--green3);
+    border-top: 2px solid var(--green2);
+}
+
+#cotizarHero .btn-primary{
+    background-color: var(--green5);
+    color: var(--green1);
+}
+
+#cotizarHero .btn-primary:hover{
+    background-color: var(--green5);
+    color: var(--green1);
+    transform: scale(1.1);
+}
+/*-- boton servicio1 --*/
+#cotizarServicio1 .modal-body{
+    background-image: radial-gradient(rgba(7,142,34,0.9), rgba(35,74,66, 0.9)), url(../media/imgSanity/pexels-vicky-thorley-345736.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cotizarServicio1 .modal-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--green2);
+    background-color: var(--green3);
+}
+
+#cotizarServicio1_Title{
+    color: var(--green1);
+    font-family: 'Roboto black';
+    font-size: 2rem;
+}
+
+#cotizarServicio1 .modal-body{
+    padding: 2vh 3vw;
+}
+
+#cotizarServicio1 .modal-body p{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+    text-align: justify;
+}
+
+#cotizarServicio1 .col-form-label{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+}
+
+#cotizarServicio1 .modal-footer{
+    background-color: var(--green3);
+    border-top: 2px solid var(--green2);
+}
+
+#cotizarServicio1 .btn-primary{
+    background-color: var(--green5);
+    color: var(--green1);
+}
+
+#cotizarServicio1 .btn-primary:hover{
+    background-color: var(--green5);
+    color: var(--green1);
+    transform: scale(1.1);
+}
+
+/*-- Boton servicio 2--*/
+
+#cotizarServicio2 .modal-body{
+    background-image: radial-gradient(rgba(7,142,34,0.9), rgba(35,74,66, 0.9)), url(../media/imgSanity/pexels-michelangelo-buonarroti-4176307.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cotizarServicio2 .modal-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--green2);
+    background-color: var(--green3);
+}
+
+#cotizarServicio2_Title{
+    color: var(--green1);
+    font-family: 'Roboto black';
+    font-size: 2rem;
+}
+
+#cotizarServicio2 .modal-body{
+    padding: 2vh 3vw;
+}
+
+#cotizarServicio2 .modal-body p{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+    text-align: justify;
+}
+
+#cotizarServicio2 .col-form-label{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+}
+
+#cotizarServicio2 .modal-footer{
+    background-color: var(--green3);
+    border-top: 2px solid var(--green2);
+}
+
+#cotizarServicio2 .btn-primary{
+    background-color: var(--green5);
+    color: var(--green1);
+}
+
+#cotizarServicio2 .btn-primary:hover{
+    background-color: var(--green5);
+    color: var(--green1);
+    transform: scale(1.1);
+} 
+
+/*-- Boton servicio 3--*/
+
+#cotizarServicio3 .modal-body{
+    background-image: radial-gradient(rgba(7,142,34,0.9), rgba(35,74,66, 0.9)), url(../media/imgSanity/caterpillars-g12d93b80c_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cotizarServicio3 .modal-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--green2);
+    background-color: var(--green3);
+}
+
+#cotizarServicio3_Title{
+    color: var(--green1);
+    font-family: 'Roboto black';
+    font-size: 2rem;
+}
+
+#cotizarServicio3 .modal-body{
+    padding: 2vh 3vw;
+}
+
+#cotizarServicio3 .modal-body p{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+    text-align: justify;
+}
+
+#cotizarServicio3 .col-form-label{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+}
+
+#cotizarServicio3 .modal-footer{
+    background-color: var(--green3);
+    border-top: 2px solid var(--green2);
+}
+
+#cotizarServicio3 .btn-primary{
+    background-color: var(--green5);
+    color: var(--green1);
+}
+
+#cotizarServicio3 .btn-primary:hover{
+    background-color: var(--green5);
+    color: var(--green1);
+    transform: scale(1.1);
+}
+
+/*-- Boton servicio 4 --*/
+
+#cotizarServicio4 .modal-body{
+    background-image: radial-gradient(rgba(7,142,34,0.9), rgba(35,74,66, 0.9)), url(../media/imgSanity/woman-and-man-in-laboratory-robes-examine-carefully-plants-in-the-greenhouse.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cotizarServicio4 .modal-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--green2);
+    background-color: var(--green3);
+}
+
+#cotizarServicio4_Title{
+    color: var(--green1);
+    font-family: 'Roboto black';
+    font-size: 2rem;
+}
+
+#cotizarServicio4 .modal-body{
+    padding: 2vh 3vw;
+}
+
+#cotizarServicio4 .modal-body p{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+    text-align: justify;
+}
+
+#cotizarServicio4 .col-form-label{
+    color: var(--gris);
+    font-family: 'Roboto regular';
+}
+
+#cotizarServicio4 .modal-footer{
+    background-color: var(--green3);
+    border-top: 2px solid var(--green2);
+}
+
+#cotizarServicio4 .btn-primary{
+    background-color: var(--green5);
+    color: var(--green1);
+}
+
+#cotizarServicio4 .btn-primary:hover{
+    background-color: var(--green5);
+    color: var(--green1);
+    transform: scale(1.1);
+}
