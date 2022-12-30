@@ -209,7 +209,7 @@
     }
 
     .wavesBg svg {
-        margin-top: -25rem;
+        margin-top: 0rem;
         width: 100vw;
         object-fit: cover;
     }
