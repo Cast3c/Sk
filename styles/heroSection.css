@@ -8,8 +8,11 @@
     --gris: #F1F1F1;
 }
 
+.fixed-bottom{
+    margin-bottom: 2vh;
+}
+
 .navbar{
-    position: absolute;
     background-color: var(--green3);
     border-radius: 0 0 5vw 0 ;
     z-index: 1;
@@ -18,14 +21,18 @@
 .navbar .navbar-brand{
     font-family: 'Kusanagi';
     color: var(--green1);
-    font-size: 1vw;
+    font-size: 1rem;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
-    padding-left: 7vw;
+    padding-left: 0vw;
 }
 
 .navbar .navbar-brand:hover{
     color: white;
+}
+
+.navbar .navbar-brand:visited{
+    color: var(--green1);
 }
 
 .navbar-collapse .nav-link{ 
@@ -46,14 +53,16 @@
 }
 
 .hero{
+    position:absolute;
     width: 100vw;
-    height: 70vh;
-    background-color: var(--green2);
+    height: 100vh;
+    background-color: var(--green1);
 }
 
 .hero-content{
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
+    margin-top: 0;
     position: absolute;
     border-radius: 10vw 0 0 0;
     background-color: white;
@@ -65,7 +74,7 @@
     font-family:'Roboto black';
     color: rgb(0,142,3);
     padding-left: 5vw;
-    padding-top: 39vh;
+    padding-top: 49vh;
     margin-top: -10vh;
     font-size: 4vw;
 }
@@ -85,7 +94,7 @@
     gap: 1vw;
     width: 4.5vw;
     height: 20vh;
-    margin-top: -45vh;
+    margin-top: -35vh;
     margin-left: 93.5vw;
     border-radius: 2vw 0 0 2vw;
     background-color: rgb(0,142,3);
@@ -105,10 +114,9 @@
 
 .carouselHero{
     display: grid;
-    place-content: center;
-    padding: 1vw;
+    padding: 5vw 1vw 1vw 1vw;
     max-width: 50vw;
-    margin-top: -60vh;
+    margin-top: -10vh;
     margin-left: 38vw;
     border-radius: 0 0 10vw 10vw;
     box-shadow: inset 0 -3em 0.5em rgba(0, 0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2),
@@ -136,94 +144,134 @@
     background-color: rgb(0,142,3);
     transform: scale(1.2);
 }
-
-@media screen and (max-width: 600px) {
-    .navi{
-        background-color: var(--blanco);
-    }
-
-    .navbar{
-        border-radius: 0 0 5vw 0;
-        background-color: var(--green3);
-    }
-
+@media screen and (min-width: 961px) {
     .navbar .navbar-brand{
         font-family: 'Kusanagi';
-        color: var(--green1);
-        font-size: 5vw;
-        padding-top: 2.5vh;
-        padding-bottom: 2.5vh;
-        padding-left: 7vw;
+        color: rgb(195, 240,64);
+        font-size: 2.2vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        padding-left: 0vw;
     }
-
+    
+    .navbar .navbar-brand:hover{
+        color: white;
+    }
+    
+    .navbar-collapse .nav-link{ 
+        color: white;
+        font-family: 'Roboto regular';
+    }
+    
+    .navbar-collapse .nav-link:hover{ 
+        color: rgb(195, 240,64);
+    }
+    
+    .nav-item{
+        padding-right: 5vh;
+    }
+    
+    .nav-link>a{
+        padding-right: 2vw;
+    }
+    
     .hero{
+        width: 100vw;
+        height: 100vh;
         position: absolute;
         background-color: var(--green3);
     }
-
+    
     .hero-content{
+        margin-top: 10.5vh;
+        width: 100vw;
+        height: 100vh;
         position: absolute;
-        display: flexbox;
+        border-radius: 10vw 0 0 0;
+        background-color: var(--blanco);
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
     }
-
+    
     .brandName{
-        position: relative;
-        margin-top: 11vh;
-        font-size: 10vw;
+        font-family:'Roboto black';
+        color: rgb(0,142,3);
+        padding-left: 5vw;
+        padding-top: 30vh;
+        margin-top: -10vh;
+        font-size: 4vw;
     }
-
+    
     .quote{
-        position: relative;
-        width: 90vw;
-        margin-top: 1vh;
-        font-size: 3vw;
+        width: 30vw;
+        height: 20vh;
+        padding-left: 5vw;
+        color: rgb(129, 129, 129);
+        font-family: 'Roboto regular';
+        font-size: 1vw;
+        background-color: transparent;
     }
-
-    .carouselHero{
-        margin-top:-84vh;
-        margin-left: 8vw;
-        max-width: 80vw;
-        height: 50vh;
-        display: grid;
-        place-content: center;
-    }
-
-    .carousel-inner{
-        padding: 2%;
-        border-radius: 0 0 12vw 12vw;
-    }
-
-    .botonHero{
-        margin-top: 30vh;
-        margin-left: 20vw;
-        font-family: 'Roboto black';
-    }
-
+    
     .social{
         display: flexbox;
         gap: 1vw;
-        width: 8vw;
+        width: 4.5vw;
         height: auto;
-        margin-top: -25vh;
-        margin-left: 89vw;
-        padding: auto;
+        margin-top: -45vh;
+        margin-left: 93vw;
         border-radius: 2vw 0 0 2vw;
         background-color: rgb(0,142,3);
+        padding: 0.5vw 1vw 1.5vw 0.5vw;
         box-shadow: 1vw 1vw 1vw rgb(129, 129, 129);
     }
-
+    
     .social >a{
-        margin-left: -2vw;
         color: rgb(195, 240,64);
-        font-size: 5vw;
+        font-size: 1.5vw;
     }
     
+    .social >a:hover{
+        color: rgb(195, 240,64);
+        transform: scale(1.3);
+    }
+    
+    .carouselHero{
+        display: grid;
+        place-content: center;
+        padding: 1vw;
+        max-width: 50vw;
+        margin-top: -55vh;
+        margin-left: 38vw;
+        border-radius: 0 0 10vw 10vw;
+        box-shadow: inset 0 -3em 0.5em rgba(0, 0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2),
+        inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    
+    .carousel-inner{
+        border-radius: 0 0 9vw 9vw;
+    }
+    
+    .botonHero{
+        margin-top: 20vh;
+        margin-left: 5vw;
+        font-family: 'Roboto black';
+    }
+    
+    .botonHero .btn-success{
+        padding: 0.5vw 3vw;
+        background-color: rgb(0,142,3);
+        border-radius: 2vw;
+    }
+    
+    .botonHero > a:hover{
+        background-color: rgb(0,142,3);
+        transform: scale(1.2);
+    }
 }
 
-@media screen and (min-width: 601px) and (max-width: 960px) {
-    .navi{
-        background-color: var(--blanco);
-    }
+@media screen and (max-width: 960px) and (min-width: 601px) {
+
 
     .navbar .navbar-brand{
         margin-left: 3vw;
@@ -295,130 +343,90 @@
     }
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (max-width: 600px) {
+
+    .navbar{
+        max-width: 100vw;
+        border-radius: 0 0 5vw 0;
+    }
+
     .navbar .navbar-brand{
         font-family: 'Kusanagi';
-        color: rgb(195, 240,64);
-        font-size: 2.2vw;
-        padding-top: 1.5vh;
-        padding-bottom: 1.5vh;
-        padding-left: 7vw;
+        color: var(--green1);
+        font-size: 5vw;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        padding-left: 0vw;
     }
-    
-    .navbar .navbar-brand:hover{
-        color: white;
-    }
-    
-    .navbar-collapse .nav-link{ 
-        color: white;
-        font-family: 'Roboto regular';
-    }
-    
-    .navbar-collapse .nav-link:hover{ 
-        color: rgb(195, 240,64);
-    }
-    
-    .nav-item{
-        padding-right: 5vh;
-    }
-    
-    .nav-link>a{
-        padding-right: 2vw;
-    }
-    
+
     .hero{
-        width: 100vw;
-        height: 60vh;
         position: absolute;
         background-color: var(--green3);
     }
-    
+
     .hero-content{
-        width: 100vw;
-        height: 100vh;
+        margin-top: -1rem;
         position: absolute;
-        border-radius: 10vw 0 0 0;
-        background-color: var(--blanco);
-        padding-left: 2.5vw;
-        padding-right: 2.5vw;
+        display: flexbox;
     }
-    
+
     .brandName{
-        font-family:'Roboto black';
-        color: rgb(0,142,3);
-        padding-left: 5vw;
-        padding-top: 30vh;
-        margin-top: -10vh;
-        font-size: 4vw;
+        margin-top: 1rem;
+        position: relative;
+        font-size: 2rem;
     }
-    
+
     .quote{
-        width: 30vw;
-        height: 20vh;
-        padding-left: 5vw;
-        color: rgb(129, 129, 129);
-        font-family: 'Roboto regular';
-        font-size: 1vw;
-        background-color: transparent;
+        position: relative;
+        text-align: justify;
+        width: 90vw;
+        height: 10vh;
+        margin-top: 1vh;
+        font-size: 0.8rem;
     }
-    
+
+    .carouselHero{
+        margin-top:-70vh;
+        margin-left: 8vw;
+        max-width: 70vw;
+        height: 50vh;
+        display: grid;
+        place-content: center;
+    }
+
+    .carousel-inner{
+        padding: 2%;
+        border-radius: 0 0 12vw 12vw;
+    }
+
+    .botonHero{
+        margin-top: 32vh;
+        margin-left: 20vw;
+        font-family: 'Roboto black';
+    }
+
     .social{
         display: flexbox;
         gap: 1vw;
-        width: 4.5vw;
+        width: 8vw;
         height: auto;
-        margin-top: -45vh;
-        margin-left: 93vw;
+        margin-top: -25vh;
+        margin-left: 89vw;
+        padding: auto;
         border-radius: 2vw 0 0 2vw;
         background-color: rgb(0,142,3);
-        padding: 0.5vw 1vw 1.5vw 0.5vw;
         box-shadow: 1vw 1vw 1vw rgb(129, 129, 129);
     }
-    
+
     .social >a{
+        margin-left: -2vw;
         color: rgb(195, 240,64);
-        font-size: 1.5vw;
+        font-size: 5vw;
     }
     
-    .social >a:hover{
-        color: rgb(195, 240,64);
-        transform: scale(1.3);
-    }
-    
-    .carouselHero{
-        display: grid;
-        place-content: center;
-        padding: 1vw;
-        max-width: 50vw;
-        margin-top: -60vh;
-        margin-left: 38vw;
-        border-radius: 0 0 10vw 10vw;
-        box-shadow: inset 0 -3em 0.5em rgba(0, 0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2),
-        inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-        z-index: -1;
-    }
-    
-    .carousel-inner{
-        border-radius: 0 0 9vw 9vw;
-    }
-    
-    .botonHero{
-        margin-top: 20vh;
-        margin-left: 5vw;
-        font-family: 'Roboto black';
-    }
-    
-    .botonHero .btn-success{
-        padding: 0.5vw 3vw;
-        background-color: rgb(0,142,3);
-        border-radius: 2vw;
-    }
-    
-    .botonHero > a:hover{
-        background-color: rgb(0,142,3);
-        transform: scale(1.2);
-    }
 }
+
+
 
 @supports(object-fit: cover) {
     img {
