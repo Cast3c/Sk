@@ -114,6 +114,7 @@
 }
 
 .aUquote {
+    position: absolute;
     margin-top: 10rem;
     text-align: justify;
     width: 40vw;
@@ -122,7 +123,7 @@
 }
 
 .aUsection2 {
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .autitle2 {
@@ -194,6 +195,10 @@
 
     .aUquote{
         margin-top: 2rem;
+    }
+
+    .aUsection2{
+        margin-top: 15rem;
     }
 
     .autitle2 {
