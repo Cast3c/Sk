@@ -253,7 +253,7 @@
 
 @media screen and (max-width: 600px){
     .contactUs{
-        height: 180vh;
+        height: auto;
         margin-top: 590vh;
     }
 

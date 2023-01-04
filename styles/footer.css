@@ -347,7 +347,7 @@
 @media screen and (max-width: 600px){
     .footer{
         height: 80vh;
-        margin-top: 766vh;
+        margin-top: 769vh;
         grid-template-columns: repeat(auto-fit, minmax(70vw ,1fr));
     }
 
