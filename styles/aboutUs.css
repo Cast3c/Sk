@@ -28,7 +28,7 @@
     margin: auto;
     border: 3px solid var(--green2);
     border-radius: 100%;
-    animation: rotation 20000ms linear infinite;
+    /*animation: rotation 20000ms linear infinite;*/
 }
 
 .dot1 {
@@ -50,8 +50,6 @@
 
 .innerCircle {
     position: absolute;
-    margin-top: -29vw;
-    margin-left: 2.2vw;
     width: 35vw;
     height: 35vw;
     box-shadow: inset 0 0 1vw rgba(0, 0, 0, 0.9);
@@ -74,8 +72,7 @@
 
 .innerImg {
     position: absolute;
-    margin-top: .5rem;
-    margin-left: 6.5rem;
+
     display: grid;
     place-content: center;
 }
@@ -83,8 +80,7 @@
 .innerImg>img {
     height: 32vw;
     width: 32vw;
-    margin-top: 3rem;
-    margin-left: -.7rem;
+    
     object-fit: cover;
     border-radius: 100%;
 }
@@ -179,6 +175,16 @@
 }
 
 @media (min-width: 961px){
+    .innerCircle{
+        position: relative;
+        margin-top: -26rem;
+        margin-left: 2rem;
+    }
+
+    .innerImg{
+        margin-left: 6rem;
+        margin-top: 5rem;
+    }
 
     .aUtitle1{
         margin-top: 10rem;
@@ -252,8 +258,8 @@
     .innerCircle{
         width: 36vw;
         height: 36vw;
-        margin-top: -41vw;
-        margin-left: 1.5vw;
+        margin-top: -22.3rem;
+        margin-left: .7rem;
     }
 
     .innerCircle::after{
@@ -264,8 +270,8 @@
     .innerImg{
         width: 30vw;
         height: 30vw;
-        margin-top: 5vh;
-        margin-left: 10.5vw;
+        margin-top: 3.5rem;
+        margin-left: 4.5rem;
     }
 
     .innerImg >img{
@@ -292,7 +298,7 @@
     .aUquote{
         width: 40vw;
         margin-top: 1rem;
-        text-shadow: 0 0 1vw var(--green5);
+        text-shadow: 0 0 5vw var(--green5);
     }
 
     .autitle2{
