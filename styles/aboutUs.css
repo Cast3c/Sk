@@ -120,6 +120,7 @@
     width: 40vw;
     font-size: 1rem;
     color: grey;
+    text-shadow: 0 0 1vw var(--green5);
 }
 
 .aUsection2 {
@@ -224,7 +225,7 @@
 @media screen and (min-width: 601px) and (max-width:960px){
     .aboutUs{
         position: absolute;
-        margin-top: 72vh;
+        margin-top: 170vh;
         grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
     }
 
@@ -245,7 +246,7 @@
     .innerCircle{
         width: 36vw;
         height: 36vw;
-        margin-top: -33.5vw;
+        margin-top: -41vw;
         margin-left: 1.5vw;
     }
 
@@ -257,7 +258,7 @@
     .innerImg{
         width: 30vw;
         height: 30vw;
-        margin-top: 15vh;
+        margin-top: 5vh;
         margin-left: 10.5vw;
     }
 
@@ -284,15 +285,18 @@
 
     .aUquote{
         width: 40vw;
+        margin-top: 1rem;
+        text-shadow: 0 0 1vw var(--green5);
     }
 
     .autitle2{
+        margin-top: 10rem;
         margin-left: -20vw;
     }
 
     .aUicons{
         width: 100vw;
-        margin-top: -5vh;
+        margin-top: 20vh;
         margin-left: -43vw;
     }
 
@@ -302,7 +306,7 @@
     }
 
     .bottomDivider{
-        margin-top: -18vh;
+        margin-top: 10vh;
     }
 }
 

@@ -49,6 +49,7 @@
 .custom-shape-divider-top .shape-fill {
     fill: var(--green4);
 }
+
 /** ····················· **/
 
 /** PRODUCTS SECTION **/
@@ -62,12 +63,12 @@
 }
 
 /**info left section**/
-.infoGrid{
+.infoGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.iconInfoProduct{
+.iconInfoProduct {
     margin-top: 15vh;
     width: 18vw;
     height: 13vh;
@@ -75,7 +76,7 @@
     background-color: var(--green3);
 }
 
-.iconImg{
+.iconImg {
     margin-top: -17.5vh;
     margin-left: 10vw;
     height: auto;
@@ -83,7 +84,7 @@
     object-fit: contain;
 }
 
-.infoTitle1{
+.infoTitle1 {
     margin-top: 5vh;
     margin-left: 7vw;
     color: var(--green1);
@@ -91,7 +92,7 @@
     font-weight: lighter;
 }
 
-.infoTitle2{
+.infoTitle2 {
     margin-top: -2.7vh;
     margin-left: 7vw;
     color: var(--green1);
@@ -100,16 +101,16 @@
     font-weight: 700;
 }
 
-.infoText{
+.infoText {
     margin-top: 5vh;
     margin-left: 7vw;
     text-align: justify;
     margin-right: 7vw;
     font-size: 1vw;
-    color:  var(--gris);
+    color: var(--gris);
 }
 
-.infoButton .btnInfo{
+.infoButton .btnInfo {
     margin-top: -2.5vh;
     margin-left: 7.5vw;
     padding: 0.5vh 3vw;
@@ -121,11 +122,12 @@
     font-size: 1vw;
 }
 
-.infoButton .btnInfo:hover{
+.infoButton .btnInfo:hover {
     background-color: var(--green5);
     transform: scale(1.1);
     color: #C3F040;
 }
+
 /***********************/
 /**cards right section**/
 .cardsGrid {
@@ -140,21 +142,21 @@
     border-radius: 43px;
     height: 56.4vh;
     text-align: center;
-    box-shadow: 1vw 1vw 2vw rgba(1, 1,1, 0.5);
+    box-shadow: 1vw 1vw 2vw rgba(1, 1, 1, 0.5);
 }
 
-.grid-item:hover{
+.grid-item:hover {
     border: 3px solid var(--green2);
 }
 
-.grid-item > img{
+.grid-item>img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 40px;
 }
 
-.infoCard{
+.infoCard {
     position: relative;
     height: 20vh;
     width: auto;
@@ -164,20 +166,20 @@
     background-color: var(--blanco);
 }
 
-.infoCardTitle{
+.infoCardTitle {
     text-align: start;
     font-size: 1.2vw;
     font-weight: 700;
     color: var(--green3);
 }
 
-.infoCardText{
+.infoCardText {
     color: grey;
     font-size: 0.8vw;
     text-align: justify;
 }
 
-.infoCard .btn-success{
+.infoCard .btn-success {
     position: absolute;
     background-color: var(--green3);
     border: none;
@@ -189,153 +191,165 @@
     z-index: 1;
 }
 
-.infoCard .btn-success:hover{
+.infoCard .btn-success:hover {
     background-color: var(--green3);
     transform: scale(1.1);
 }
+
 /***************************/
 /** FIN PRODUCTS SECTION **/
 
 @media (min-width: 961px) {
+
     /***### SVG BG SECTION ###***/
-.wavesBg{
-    border-top: 300px solid var(--green3);
-}
-
-.wavesBg svg{
-    margin-top: -10rem;
-    position: absolute;
-}
-
-.custom-shape-divider-top svg{
-    height: 500px;
-}
-
-/***### FIN SVG BG SECTION ###***/
-/********************************/
-/*** grid ***/
-.productsWrapper{
-    grid-template-columns: 50vw 50vw;
-}
-/*** end grid ***/
-/***### INFO LEFT SECTION ###***/
-.iconInfoProduct{
-    width: 10rem;
-}
-
-.iconImg{
-    margin-left: 5rem;
-}
-
-.infoTitle1{
-    margin-top: 0rem;
-    text-align: start;
-    font-size: 2.5rem;
-}
-.infoTitle2{
-    text-align: start;
-    font-size: 2.5rem;
-    margin-top: -1rem;
-}
-
-.infoText{
-    margin-top: 1rem;
-    margin-right: 2rem;
-    margin-left: 4.5rem;
-    text-align: justify;
-    font-size: 1rem;
-    padding: 2vh 5vh 10vw 5vw;
-}
-
-.infoButton .btnInfo{
-    font-size: 1rem;
-}
-/***###FIN INFO LEFT SECTION###***/
-/***###########################***/
-/***### Cards section ###***/
-
-.cardsGrid{
-    display: grid;
-    margin-top: -1rem;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 0.5fr));
-    padding: 2vh 5vw 2vh 5vw;
-    place-content: center;
-}
-
-.infoCardText{
-    font-size: 0.7rem;
-}
-
-.infoCard
-
-}
-
-@media screen and (min-width: 601px) and (max-width: 960px){
-    /***### SVG BG SECTION ###***/
-    .wavesBg{
-        margin-top: -42.5rem;
-        border-top: 150px solid var(--green3);
+    .wavesBg {
+        border-top: 300px solid var(--green3);
     }
 
-    .wavesBg svg{
+    .wavesBg svg {
+        margin-top: -10rem;
         position: absolute;
-        margin-top: -18rem;
     }
 
-    .custom-shape-divider-top svg{
-        margin-top: -15rem;
-        height: 200px;
+    .custom-shape-divider-top svg {
+        height: 500px;
     }
 
     /***### FIN SVG BG SECTION ###***/
     /********************************/
     /*** grid ***/
-    .productsWrapper{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 2rem;
+    .productsWrapper {
+        grid-template-columns: 50vw 50vw;
     }
+
     /*** end grid ***/
     /***### INFO LEFT SECTION ###***/
-    .iconInfoProduct{
-        margin-left: -2rem;
-        margin-top: -37rem;
-        background-color: var(--green4);
-        width: 7rem;
-    }
-    .iconImg{
-        margin-left: 1rem;
+    .iconInfoProduct {
+        width: 10rem;
     }
 
-    .infoTitle1{
-        margin-top: -5rem;
-        text-align: end;
-        font-size: 2rem;
-    }
-    .infoTitle2{
-        text-align: end;
-        font-size: 2rem;
+    .iconImg {
+        margin-left: 5rem;
     }
 
-    .infoText{
+    .infoTitle1 {
+        margin-top: 0rem;
+        text-align: start;
+        font-size: 2.5rem;
+    }
+
+    .infoTitle2 {
+        text-align: start;
+        font-size: 2.5rem;
+        margin-top: -1rem;
+    }
+
+    .infoText {
         margin-top: 1rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-right: 2rem;
+        margin-left: 4.5rem;
         text-align: justify;
         font-size: 1rem;
+        padding: 2vh 5vh 10vw 5vw;
     }
 
-    .infoButton .btnInfo{
+    .infoButton .btnInfo {
         font-size: 1rem;
     }
+
     /***###FIN INFO LEFT SECTION###***/
     /***###########################***/
     /***### Cards section ###***/
 
-    .cardsGrid{
+    .cardsGrid {
         display: grid;
-        margin-top: -18rem;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        margin-top: -1rem;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 0.5fr));
+        padding: 2vh 5vw 2vh 5vw;
+        place-content: center;
+    }
+
+    .infoCardText {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+
+    /***### SVG BG SECTION ###***/
+    .wavesBg {
+        margin-top: -27rem;
+        border-top: 150px solid var(--green3);
+    }
+
+    .wavesBg svg {
+        position: absolute;
+        margin-top: 14rem;
+    }
+
+    .custom-shape-divider-top svg {
+        display: none;
+        position: relative;
+        margin-top: 0.7rem;
+        height: 200px;
+        z-index: 0;
+    }
+
+    /***### FIN SVG BG SECTION ###***/
+    /********************************/
+    /*** grid ***/
+    .productsWrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        margin-top: 35rem;
+    }
+
+    /*** end grid ***/
+    /***### INFO LEFT SECTION ###***/
+    .iconInfoProduct {
+        margin-left: -2rem;
+        margin-top: -40rem;
+        background-color: var(--green4);
+        width: 7rem;
+    }
+
+    .iconImg {
+        margin-left: 1rem;
+    }
+
+    .infoTitle1 {
+        margin-top: -5rem;
+        text-align: end;
+        font-size: 2rem;
+    }
+
+    .infoTitle2 {
+        text-align: end;
+        font-size: 2rem;
+    }
+
+    .infoText {
+        margin-top: 1rem;
+        margin-left: 5rem;
+        margin-right:5rem;
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+
+    .infoButton .btnInfo {
+        margin-top: 5rem;
+        font-size: 1rem;
+    }
+
+    /***###FIN INFO LEFT SECTION###***/
+    /***###########################***/
+    /***### Cards section ###***/
+
+    .cardsGrid {
+        display: grid;
+        margin-top: -25rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
         padding: 2rem;
     }
 
@@ -365,89 +379,89 @@
         z-index: 0;
     }
 
-    .productsWrapper{
+    .productsWrapper {
         padding: 0.5rem;
         display: grid;
         grid-template-columns: 1fr;
     }
+
     /***### FIN SVG BG SECTION ###***/
     /********************************/
     /***### INFO LEFT SECTION ###***/
-    .infoGrid{
+    .infoGrid {
         display: grid;
         grid-template-columns: 1fr;
     }
-    
-    .iconInfoProduct{
+
+    .iconInfoProduct {
         margin-left: -0.5rem;
         margin-top: -3vh;
         width: 25vw;
         background-color: var(--green5);
     }
 
-    .iconImg{
+    .iconImg {
         margin-left: 2vw;
         width: 50px;
     }
 
-    .infoTitle1{
+    .infoTitle1 {
         margin-top: -12vh;
         margin-right: 1rem;
         text-align: end;
         font-size: 2rem;
     }
 
-    .infoTitle2{
+    .infoTitle2 {
         margin-top: -2vh;
         margin-right: 1rem;
         text-align: end;
         font-size: 2rem;
     }
 
-    .infoText{
+    .infoText {
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 1vh;
         font-size: 0.8rem;
     }
 
-    .infoButton .btnInfo{
+    .infoButton .btnInfo {
         margin: 1rem;
         font-size: 1rem;
     }
 
     /***###FIN INFO LEFT SECTION###***/
-    .cardsGrid{
+    .cardsGrid {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 1rem;
         padding: 1rem;
     }
 
-    .grid-item > img{
+    .grid-item>img {
         width: 520px;
         height: auto;
         object-fit: cover;
         border-radius: 40px;
     }
 
-    .infoCard{
+    .infoCard {
         padding: 1.5rem 2rem;
     }
 
-    .infoCardTitle{
+    .infoCardTitle {
         font-size: 1rem;
     }
 
-    .infoCardText{
+    .infoCardText {
         font-size: 0.7rem;
     }
 
-    .infoCard .btn-success{
+    .infoCard .btn-success {
         margin-top: -1.5rem;
         font-size: 1rem;
         padding: 0 1.5em;
     }
 
 }
-

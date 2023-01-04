@@ -91,6 +91,8 @@
 }
 
 .social{
+    position: absolute;
+    z-index: 1;
     display: flexbox;
     gap: 1vw;
     width: 4.5vw;
@@ -288,19 +290,21 @@
     }
 
     .hero{
-        background-color: var(--green3);
+        background-color: var(--blanco);
     }
 
     .hero-content{
         position: absolute;
-        display: flexbox;
+        height: 80vh;
+        margin-top: 6.5vh;
+        z-index: 1;
     }
 
     .carouselHero{
-        margin-top:-20rem;
+        margin-top:-25rem;
         margin-left: 38vw;
         width: 50vw;
-        height: 50vh;
+        max-height: 70vh;
         display: grid;
         place-content: center;
     }
@@ -317,12 +321,13 @@
     }
 
     .social{
-        display: flexbox;
+        position: absolute;
+        z-index: 1;
         gap: 1vw;
         width: 5vw;
-        height: 20vh;
+        height: auto;
         margin-top: -25vh;
-        margin-left: 92.5vw;
+        margin-left: 90vw;
         border-radius: 2vw 0 0 2vw;
         background-color: rgb(0,142,3);
         box-shadow: 1vw 1vw 1vw rgb(129, 129, 129);
@@ -335,7 +340,7 @@
 
     .quote{
         position: relative;
-        width: 12rem;
+        width: 14rem;
         margin-top: 1vh;
         font-size: 1.3vw;
         text-align: justify;

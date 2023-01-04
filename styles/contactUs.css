@@ -157,6 +157,100 @@
     width: 15vw;
     margin-left: 1vw;
 }
+
+
+@media (min-width: 961px){
+
+    .blogSuscribe{
+        margin-top: 3vh;
+    } 
+}
+
+@media screen and (min-width: 601px) and (max-width:960px){
+    .contactUs{
+        margin-top:380vh;
+        height: auto;
+    }
+
+    .contactTitle{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contactTitle{
+        margin-top: 3rem;
+    }
+
+    .contactContent{
+        grid-template-columns: repeat(1fr);
+    }
+
+    .contactLeft{
+        margin-top: 6vh;
+        margin-left: 5vw;
+        margin-right: auto;
+    }
+
+    .contactForm{
+        margin: auto;
+        width: 90vw;
+        height: 50vh;
+        padding: 5vw;
+    }
+
+    .btn.btnContact{
+        margin-left: 15vw;
+    }
+
+    .contactRight{
+        margin: 6vh 0vw;
+    }
+
+    .quoteContact{
+        width: 90vw;
+        height: auto;
+        margin-left: 5vw;
+    }
+
+    .mapContent{
+        margin: 5vw;
+        max-width: 90vw;
+        width: 90vh;
+    }
+    
+    .contactCards{
+        grid-template-columns: 1fr;
+    }
+
+    .contentCard{
+        margin: 5vw;
+        width: 90vw;
+    }
+
+    .blogSuscribe{
+        width: 90vw;
+        margin-top: -5vh;
+        margin-left: 5vw;
+    }
+
+    .blogImgCont{
+        margin-left: -70vw;
+    }
+
+    .labelInputBlog{
+        width: 20vw;
+        margin-left: 15vw;
+        font-size: 0.7rem;
+    }
+
+    .blogForm{
+        width: 40vw;
+        margin-left: 5vw;
+    }
+
+
+}
+
 @media screen and (max-width: 600px){
     .contactUs{
         height: 180vh;
@@ -239,11 +333,4 @@
         margin-left: 5vw;
     }
 
-}
-
-@media (min-width: 961px){
-
-    .blogSuscribe{
-        margin-top: 3vh;
-    } 
 }
