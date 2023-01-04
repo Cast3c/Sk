@@ -155,10 +155,6 @@
 }
 
 .infoCard{
-    /*
-    3214429021 Toberin
-    3108790906 Nueva Zelanda
-    */
     position: relative;
     height: 20vh;
     width: auto;
@@ -182,12 +178,15 @@
 }
 
 .infoCard .btn-success{
+    position: absolute;
     background-color: var(--green3);
     border: none;
+    margin-top: -4vh;
     font-size: 0.8vw;
     font-weight: 700;
     padding: 0.2vh 1.5vw;
     border-radius: 100px;
+    z-index: 1;
 }
 
 .infoCard .btn-success:hover{
@@ -266,6 +265,8 @@
 .infoCardText{
     font-size: 0.7rem;
 }
+
+.infoCard
 
 }
 
