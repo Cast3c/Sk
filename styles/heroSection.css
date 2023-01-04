@@ -248,7 +248,7 @@
         padding: 1vw;
         max-width: 50vw;
         max-height: 70vh;
-        margin-top: -52vh;
+        margin-top: -48vh;
         margin-left: 38vw;
         border-radius: 0 0 10vw 10vw;
         box-shadow: inset 0 -3em 0.5em rgba(0, 0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2),
@@ -264,7 +264,7 @@
     }
     
     .botonHero{
-        margin-top: 20vh;
+        margin-top: 5vh;
         margin-left: 5vw;
         font-family: 'Roboto black';
     }
