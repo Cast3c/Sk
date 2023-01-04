@@ -77,7 +77,6 @@
     padding-left: 5vw;
     padding-top: 49vh;
     margin-top: -10vh;
-    font-size: 4vw;
 }
 
 .quote{
@@ -116,27 +115,28 @@
 }
 
 .carouselHero{
+    background-color: transparent;
     display: grid;
     padding: 5vw 1vw 1vw 1vw;
     max-width: 50vw;
-    max-height: 50vh;
+    max-height: 60vh;
     margin-top: 5vh;
     margin-left: 38vw;
     border-radius: 0 0 10vw 10vw;
-    box-shadow: inset 0 -3em 0.5em rgba(0, 0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2),
-    inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    box-shadow:  inset 0em 0em 0em rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .carousel-inner{
+    position: absolute;
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: fill;
+    z-index: 1;
     border-radius: 0 0 9vw 9vw;
 }
 
 .botonHero{
-    margin-top: 15vh;
     margin-left: 5vw;
     font-family: 'Roboto black';
 }
@@ -224,7 +224,7 @@
         gap: 1vw;
         width: 4.5vw;
         height: auto;
-        margin-top: -45vh;
+        margin-top: -50vh;
         margin-left: 93vw;
         border-radius: 2vw 0 0 2vw;
         background-color: rgb(0,142,3);
@@ -248,23 +248,22 @@
         padding: 1vw;
         max-width: 50vw;
         max-height: 70vh;
-        margin-top: -48vh;
+        margin-top: -51.5vh;
         margin-left: 38vw;
         border-radius: 0 0 10vw 10vw;
-        box-shadow: inset 0 -3em 0.5em rgba(0, 0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2),
-        inset 0em 0.3em 0.5em rgba(0,0, 0, 0.2), inset 0em 0.3em 0.5em rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0em 0em 1em rgba(0, 0, 0, 0.5);
         z-index: -1;
     }
     
     .carousel-inner{
-        width: 100%;
+        width: 90%;
         height: auto;
         object-fit: cover;
         border-radius: 0 0 9vw 9vw;
     }
     
     .botonHero{
-        margin-top: 5vh;
+        margin-top: -10vh;
         margin-left: 5vw;
         font-family: 'Roboto black';
     }
@@ -301,21 +300,22 @@
     }
 
     .carouselHero{
-        margin-top:-25rem;
-        margin-left: 38vw;
-        width: 50vw;
+        margin-top:-28rem;
+        margin-left: 30vw;
+        width: 60vw;
         max-height: 70vh;
         display: grid;
         place-content: center;
+        box-shadow:  inset 0em 0em 1em rgba(0, 0, 0, 0.5);
     }
 
     .carousel-inner{
-        padding: 2%;
-        border-radius: 0 0 12vw 12vw;
+        border-radius: 0 0 60px 50px;
     }
 
     .brandName{
         position: relative;
+        margin-left: -6vh;
         margin-top: -10rem;
         font-size: 5vw;
     }
@@ -327,7 +327,7 @@
         width: 5vw;
         height: auto;
         margin-top: -25vh;
-        margin-left: 90vw;
+        margin-left: 84vw;
         border-radius: 2vw 0 0 2vw;
         background-color: rgb(0,142,3);
         box-shadow: 1vw 1vw 1vw rgb(129, 129, 129);
@@ -342,6 +342,7 @@
         position: relative;
         width: 14rem;
         margin-top: 1vh;
+        margin-left: -6vw;
         font-size: 1.3vw;
         text-align: justify;
     }
@@ -385,9 +386,9 @@
     }
 
     .brandName{
-        margin-top: 1rem;
+        margin-top: 5rem;
         position: relative;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .quote{
@@ -395,7 +396,7 @@
         text-align: justify;
         width: 90vw;
         height: 10vh;
-        margin-top: 1vh;
+        margin-top: 1.5vh;
         font-size: 0.8rem;
     }
 
@@ -406,15 +407,16 @@
         height: 50vh;
         display: grid;
         place-content: center;
+        box-shadow:  inset 0em 0em 1em rgba(0, 0, 0, 0.5);
     }
 
     .carousel-inner{
-        padding: 2%;
+        padding: 1%;
         border-radius: 0 0 12vw 12vw;
     }
 
     .botonHero{
-        margin-top: 32vh;
+        margin-top: 25.5vh;
         margin-left: 20vw;
         font-family: 'Roboto black';
     }

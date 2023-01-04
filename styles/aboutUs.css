@@ -318,7 +318,7 @@
 
 @media screen and (max-width: 600px) {
     .aboutUs {
-        margin-top: 290vh;
+        margin-top: 320vh;
         width: 100vw;
         height: 100vh;
         display: grid;
@@ -391,6 +391,7 @@
     }
 
     .aUtitle1 {
+        margin-left: -1vw;
         font-size: 2rem;
     }
 
@@ -400,20 +401,22 @@
     }
 
     .aUquote {
+        margin-left: -12vw;
         margin-top: 1rem;
-        width: 90vw;
+        width: 80%;
         font-size: .8rem;
         text-align: justify;
     }
 
     .aUsection2{
-        margin-top: 2rem;
+        margin-left: -15vw;
+        margin-top: 17rem;
     }
 
     .autitle2{
         margin: auto;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .aUicons{
@@ -437,7 +440,7 @@
     
     .bottomDivider{
         margin-top: -16rem;
-        border-bottom: solid 700px var(--green4);
+        border-bottom: solid 900px var(--green4);
     }
 }
 

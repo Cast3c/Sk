@@ -390,6 +390,7 @@
     }
 
     .productsWrapper {
+        margin-top: -2vh;
         padding: 0.5rem;
         display: grid;
         grid-template-columns: 1fr;
