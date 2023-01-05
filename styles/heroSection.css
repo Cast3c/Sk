@@ -8,13 +8,8 @@
     --gris: #F1F1F1;
 }
 
-.wpButton{
-    position: absolute;
-    z-index: 99;
-}
-
 .fixed-bottom{
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 }
 
 .navbar{
