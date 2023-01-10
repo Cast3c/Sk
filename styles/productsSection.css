@@ -16,6 +16,34 @@
     margin-top: 100vh;
 }
 
+.modal-body{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.vidModal{
+    display: grid;
+    place-content: center;
+}
+
+iframe{
+    width: 50vw;
+    height: 50vh;
+}
+
+.vidQuote{
+    display: grid;
+    place-content: center;
+    margin: 2% 15%;
+    text-align: justify;
+    max-width: 70%;
+
+}
+
+.vidForm{
+    margin:2% 15%;
+}
+
 /** Background waves **/
 .wavesBg {
     margin-top: -10vh;

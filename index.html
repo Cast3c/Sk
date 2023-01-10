@@ -117,7 +117,8 @@
                         Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat.
                     </div>
                     <div class="infoButton">
-                        <a href="#" class="btn btnInfo">COMPRAR SERVICIO</a>
+                        <a href="#" class="btn btnInfo" data-bs-toggle="modal"
+                        data-bs-target="#cotizarServicios">COMPRAR SERVICIO</a>
                     </div>
                 </div>
             </div>
@@ -379,6 +380,73 @@
                         sit amet mattis vulputate enim nulla. At consectetur lorem donec massa sapien faucibus et.
                     </p>
                     <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Ingresa tu correo">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="tel" name="" id=""
+                                placeholder="Escribe tu numero de telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Cuentanos con que podemos ayudarte:
+                            </label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Solicitar cotizacion</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal cotizar servicios-->
+    <div class="modal fade" id="cotizarServicios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="cotizarServicios_Title">Cotizacion de servicios</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="vidModal">
+                        <iframe src="https://www.youtube.com/embed/lFou4zE1NVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="vidQuote">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Massa eget egestas purus viverra accumsan. Nunc consequat interdum
+                            varius
+                            sit amet mattis vulputate enim nulla. At consectetur lorem donec massa sapien faucibus et.
+                        </p>
+                    </div>
+                    <form class="vidForm">
+                        <legend>Selecciona el servicio que quieres cotizar</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Servicio 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Servicio 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Servicio 3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Servicio 4
+                            </label>
+                        </div>
                         <div class="mb-3">
                             <input type="text" class="form-control" id="recipient-name" placeholder="Ingresa tu correo">
                         </div>
