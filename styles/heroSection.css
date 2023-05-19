@@ -12,166 +12,175 @@
     margin-bottom: 4vh;
 }
 
+/* ////// navbar ////// */
 .navbar{
-    background-color: var(--green3);
-    border-radius: 0 0 5vw 0 ;
-    z-index: 1;
+    max-height: 100px;
+    background-color: var(--blanco);
+}
+
+.navbar .container-fluid{
+    padding: 1% 4%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar .navbar-brand{
     font-family: 'Kusanagi';
-    color: var(--green1);
-    font-size: 1rem;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    padding-left: 0vw;
+    color: var(--green5);
+    font-size: 2vw;
+    left: 5%;
+}
+
+.navbar .collapse{
+    position: absolute;
+    right: 3%;
 }
 
 .navbar .navbar-brand:hover{
-    color: white;
+    color: var(--green5)
 }
 
 .navbar .navbar-brand:visited{
-    color: var(--green1);
+    color: var(--green3);
 }
 
 .navbar-collapse .nav-link{ 
-    color: white;
     font-family: 'Roboto regular';
+    font-size: 22px;
+    font-weight: 500;
+    -webkit-text-stroke: .3px var(--green5);
+    transition: 0.3s;
 }
 
-.navbar-collapse .nav-link:hover{ 
-    color: var(--green2);
+.nav-link:hover{
+    font-weight: 700;
+    color: var(--green3);
+    text-decoration: none;
+    -webkit-text-stroke: var(--green3);
+    border-bottom: solid 5px var(--green3);
+    padding-bottom: 2px;
 }
-
-.nav-item{
-    padding-right: 5vh;
-}
-
-.nav-link>a{
-    padding-right: 2vw;
-}
-
+/* ////// hero section ////// */
 .hero{
-    position:absolute;
-    width: 100vw;
-    height: 100vh;
-    margin-top: 1.8vh;
+    position: relative;
     background-color: var(--blanco);
+    top: -49px;
+}
+/* /// herobackground /// */
+.st0{
+    z-index: -1;
+    background-color: #E4E4E4;
+    fill: #E4E4E4;
 }
 
-.hero-content{
-    width: 100vw;
-    height: 100vh;
-    margin-top: 2vh;
+.square-round{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15%;
     position: absolute;
-    border-radius: 10vw 0 0 0;
-    background-color: white;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    background-color: var(--green1);
+    right: -60px;
+    top: 190px;
+    z-index: 0;
+}
+
+.line-bg{
+    width: 30vw;
+    border: solid 3px var(--green3);
+    position: absolute;
+    top: 220px;
+    right: 10vw;
+    z-index: 0;
+}
+/* /// hero-content /// */
+.hero-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 10;
+    position: relative;
+    top: 0;
+}
+
+.engage-quote{
 }
 
 .brandName{
     font-family:'Roboto black';
     color: rgb(0,142,3);
-    padding-left: 5vw;
-    padding-top: 49vh;
-    margin-top: -10vh;
+    font-size: 4vw;
 }
 
 .quote{
-    width: 30vw;
-    height: 20vh;
-    padding-left: 5vw;
     color: rgb(129, 129, 129);
     font-family: 'Roboto regular';
+    font-size: 1.3vw;
+    width: 300px;
+}
+
+.botonHero{
+    font-family: 'Roboto black';
+    top: 15vh;
+}
+
+.botonHero .btn-success{
+    padding: 0.5vw 3vw;
+    background-color: var(--green5); 
+    border-radius: 2vw;
+    color: var(--green1);
     font-size: 1vw;
-    background-color: transparent;
-}
-
-.social{
-    position: absolute;
-    z-index: 1;
-    display: flexbox;
-    gap: 1vw;
-    width: 4.5vw;
-    height: 20vh;
-    margin-top: -35vh;
-    margin-left: 93.5vw;
-    border-radius: 2vw 0 0 2vw;
-    background-color: rgb(0,142,3);
-    padding: 1vw 1vw 1.5vw 1.5vw;
-    box-shadow: 1vw 1vw 1vw rgb(129, 129, 129);
-}
-
-.social >a{
-    color: rgb(195, 240,64);
-    font-size: 2vw;
-}
-
-.social >a:hover{
-    color: rgb(195, 240,64);
-    transform: scale(1.3);
 }
 
 .carouselHero{
     background-color: transparent;
-    display: grid;
-    padding: 5vw 1vw 1vw 1vw;
-    max-width: 50vw;
-    max-height: 60vh;
-    margin-top: 5vh;
-    margin-left: 38vw;
-    border-radius: 0 0 10vw 10vw;
-    box-shadow:  inset 0em 0em 0em rgba(0, 0, 0, 0.5);
+    min-width: 400px;
+    min-height: 600px;
+    max-width: 600px;
+    max-height: 800px;
     z-index: 0;
 }
 
 .carousel-inner{
     position: absolute;
+    border-radius: 20px;
     width: 100%;
-    height: auto;
     object-fit: fill;
-    z-index: 1;
-    border-radius: 0 0 9vw 9vw;
 }
 
-.botonHero{
-    margin-left: 5vw;
-    font-family: 'Roboto black';
+.car-btn-controls{
+    position: absolute;
+    width: 40vw;
+    font-size: 30px;
+    color: var(--green3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
-.botonHero .btn-success{
-    padding: 0.5vw 3vw;
-    background-color: rgb(0,142,3);
-    border-radius: 2vw;
+.car-btn-controls .fa-circle{
+    font-size: 8px;
+    position: absolute;
+    top: 17px;
+    right: 379px;
 }
 
-.botonHero > a:hover{
-    background-color: rgb(0,142,3);
-    transform: scale(1.2);
-}
+
 @media screen and (min-width: 961px) {
-    .navbar .navbar-brand{
-        font-family: 'Kusanagi';
-        color: rgb(195, 240,64);
-        font-size: 2.2vw;
+    /* .navbar .navbar-brand{
+        font-size: 2vw;
         padding-top: 1.5vh;
         padding-bottom: 1.5vh;
         padding-left: 0vw;
     }
     
-    .navbar .navbar-brand:hover{
-        color: white;
-    }
-    
     .navbar-collapse .nav-link{ 
-        color: white;
+        color: var(--green5);
         font-family: 'Roboto regular';
     }
     
     .navbar-collapse .nav-link:hover{ 
-        color: rgb(195, 240,64);
+        color:var(--green3);
     }
     
     .nav-item{
@@ -186,27 +195,15 @@
         width: 100vw;
         height: 100vh;
         position: absolute;
-        background-color: var(--green3);
     }
-    
-    .hero-content{
-        margin-top: 10.5vh;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        border-radius: 10vw 0 0 0;
-        background-color: var(--blanco);
-        padding-left: 2.5vw;
-        padding-right: 2.5vw;
-    }
-    
+        
     .brandName{
         font-family:'Roboto black';
         color: rgb(0,142,3);
         padding-left: 5vw;
         padding-top: 30vh;
         margin-top: -10vh;
-        font-size: 4vw;
+        
     }
     
     .quote{
@@ -215,75 +212,33 @@
         padding-left: 5vw;
         color: rgb(129, 129, 129);
         font-family: 'Roboto regular';
-        font-size: 1vw;
         background-color: transparent;
     }
     
-    .social{
-        display: flexbox;
-        gap: 1vw;
-        width: 4.5vw;
-        height: auto;
-        margin-top: -50vh;
-        margin-left: 93vw;
-        border-radius: 2vw 0 0 2vw;
-        background-color: rgb(0,142,3);
-        padding: 0.5vw 1vw 1.5vw 0.5vw;
-        box-shadow: 1vw 1vw 1vw rgb(129, 129, 129);
-    }
     
-    .social >a{
-        color: rgb(195, 240,64);
-        font-size: 1.5vw;
-    }
     
-    .social >a:hover{
-        color: rgb(195, 240,64);
-        transform: scale(1.3);
-    }
-    
-    .carouselHero{
-        display: grid;
-        place-content: center;
-        padding: 1vw;
-        max-width: 50vw;
-        max-height: 70vh;
-        margin-top: -51.5vh;
-        margin-left: 38vw;
-        border-radius: 0 0 10vw 10vw;
-        box-shadow: inset 0em 0em 1em rgba(0, 0, 0, 0.5);
-        z-index: -1;
-    }
-    
-    .carousel-inner{
-        width: 90%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 0 0 9vw 9vw;
-    }
-    
-    .botonHero{
+    /* .botonHero{
         margin-top: -10vh;
         margin-left: 5vw;
         font-family: 'Roboto black';
-    }
-    
-    .botonHero .btn-success{
+    }*/
+     
+    /* .botonHero .btn-success{
         padding: 0.5vw 3vw;
-        background-color: rgb(0,142,3);
+        background-color: rgb(0,142,3); 
         border-radius: 2vw;
-    }
+    } */
     
-    .botonHero > a:hover{
+    /* .botonHero > a:hover{
         background-color: rgb(0,142,3);
         transform: scale(1.2);
-    }
+    } */ 
 }
 
 @media screen and (max-width: 960px) and (min-width: 601px) {
 
 
-    .navbar .navbar-brand{
+    /* .navbar .navbar-brand{
         margin-left: 3vw;
         font-size: 2.2vw;
     }
@@ -293,24 +248,15 @@
     }
 
     .hero-content{
-        position: absolute;
-        height: 80vh;
-        margin-top: 6.5vh;
-        z-index: 1;
+        
     }
 
     .carouselHero{
-        margin-top:-28rem;
-        margin-left: 30vw;
-        width: 60vw;
-        max-height: 70vh;
-        display: grid;
-        place-content: center;
-        box-shadow:  inset 0em 0em 1em rgba(0, 0, 0, 0.5);
+        
     }
 
     .carousel-inner{
-        border-radius: 0 0 60px 50px;
+        
     }
 
     .brandName{
@@ -329,7 +275,6 @@
         margin-top: -25vh;
         margin-left: 84vw;
         border-radius: 2vw 0 0 2vw;
-        background-color: rgb(0,142,3);
         box-shadow: 1vw 1vw 1vw rgb(129, 129, 129);
     }
 
@@ -355,12 +300,12 @@
 
     .botonHero >a{
         font-size: 3vw;
-    }
+    } */
 }
 
 @media screen and (max-width: 600px) {
 
-    .navbar{
+    /* .navbar{
         max-width: 100vw;
         border-radius: 0 0 5vw 0;
     }
@@ -376,13 +321,7 @@
 
     .hero{
         position: absolute;
-        background-color: var(--green3);
-    }
-
-    .hero-content{
-        margin-top: -1rem;
-        position: absolute;
-        display: flexbox;
+        
     }
 
     .brandName{
@@ -438,17 +377,14 @@
         margin-left: -2vw;
         color: rgb(195, 240,64);
         font-size: 5vw;
-    }
+    } */
     
 }
 
-
-
 @supports(object-fit: cover) {
-    img {
+     img {
         width: 100%;
-        min-height: 48vh;
-        max-height: 70vh;
+        max-height: 500px;
         object-fit: cover;
-    }
+    } 
 }
