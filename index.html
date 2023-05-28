@@ -110,16 +110,20 @@
                         <div class="services-title-underline">
                         </div>
                     </div>
-                    <div class="services-btnAction">
-                        <div class="services-quote">Contamos con las herramientas, equipos y metodologías
-                            necesarias para que tu negocio y hogar sean espacios
-                            sanitariamente seguros y cumplan con el control integrado
-                            de plagas, lavado y desinfección de tanques de agua,
-                            asesorías ambientales y manipulación de alimentos.
-                        </div>
-                        <div class="services-btn">
-                            <a href="" class="cta-services" type="button">COTIZAR SERVICIOS</a>
-                        </div>
+                    <div class="infoTitle1">
+                        NUESTRAS
+                    </div>
+                    <div class="infoTitle2">
+                        SOLUCIONES
+                    </div>
+                    <div class="infoText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Viverra vitae congue eu consequat ac felis. Pellentesque nec nam
+                        aliquam sem et tortor consequat id. Sed turpis tincidunt id aliquet risus feugiat in ante metus.
+                        Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat.
+                    </div>
+                    <div class="infoButton">
+                        <a href="#" class="btn btnInfo">COMPRAR SERVICIO</a>
                     </div>
                 </div>
                 <div class="services-cards-container">
@@ -301,47 +305,44 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!--========= CONTACTO =========-->
-        <section class="contacto section" id="contacto">
-            <div class="contacto-container container">
-                <div class="contacto-data">
-                    <div class="contacto-title-box">
-                        <div class="contacto-title">CERTIFICACIONES</div>
-                        <div class="title-underline"></div>
-                    </div>
-                    <div class="contacto-quote">
-                        <p>Contamos con los conceptos sanitarios favorables
-                            expedidos por la Gobernación de Cundinamarca
-                            para actividades de lavado de tanques y control
-                            integrado de plagas, renovados anualmente para
-                            garantizar la calidad de nuestros servicios.</p>
-                    </div>
-                    <div class="contacto-icon-box">
-                        <div class="contacto-img">
-                            <img src="./Recursos Pag WEB SK/Fotos-optimized/imagen-certifi1.jpg" alt="">
-                        </div>
-                        <div class="contacto-img">
-                            <img src="./Recursos Pag WEB SK/Fotos-optimized/imagen-certifi2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="contacto-title-box">
-                        <div class="contacto-title">CONTÁCTANOS</div>
-                        <div class="title-underline"></div>
-                    </div>
-                    <div class="contacto-quote">
-                        <p>Estamos listos para dar solución a tus requerimientos.
-                            Regístrate y nos comunicaremos contigo.</p>
-                    </div>
-                </div>
-                <div class="contacto-form">
+            <div class="bottomDivider">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #078E22;
+                        }
+                    </style>
+                    <g id="Capa_1_copia">
+                    </g>
+                    <g id="Capa_1">
+                        <g>
+                            <path class="st0" d="M1920,1080H0V352.61C813,492,1388.1,611.98,1583.5,625.5C1793,640,1855.37,358.55,1920,139
+			C1920,452.67,1920,766.33,1920,1080z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="contactUs" id="contacto">
+        <div class="contactTitle">
+            CONTACTENOS
+        </div>
+        <div class="contactTitleLine"></div>
+        <div class="contactContent">
+            <div class="contactLeft">
+                <div class="contactForm">
                     <form action="" method="post">
-                        <input class="input" type="text" name="nombre" id="name" placeholder="Nombre o empresa:*">
-                        <input class="input" type="tel" name="telefono" id="tel" placeholder="Celular:*">
-                        <input class="input" type="text" name="ciudad" id="city" placeholder="Ciudad:*">
-                        <input class="input" type="email" name="correo" id="mail" placeholder="Mail:*">
-                        <textarea class="input" name="" id="" cols="30" rows="5" placeholder="Asunto:*"></textarea>
-                        <button class="btn-enviar" type="submit">ENVIAR</button>
+                        <input class="form-control mb-4" type="text" name="nombreEmpresa" id="nom"
+                            placeholder="Nombre o Empresa *" required>
+                        <input class="form-control mb-4" type="tel" name="telefonoContacto" id="tel"
+                            placeholder="Celular *" required>
+                        <input class="form-control mb-4" type="text" name="ciudadContacto" id="ciudad"
+                            placeholder="Ciudad *" required>
+                        <input class="form-control mb-4" type="email" name="mailContacto" id="e-mail"
+                            placeholder="Mail *" required>
+                        <button class="btn btnContact" type="submit">ENVIAR</button>
                     </form>
                 </div>
             </div>
@@ -422,12 +423,14 @@
                     (+57) 3005061291
                 </div>
             </div>
-            <div class="footer-item">
-                <div class="itemIconFooter">
-                    <img src="./Recursos Pag WEB SK/Iconos/facebook-icon.png" alt="">
-                </div>
-                <div class="itemTitleFooter">
-                    SanityKing
+        </div>
+    </div>
+    <!-- Modal cotizar servicio 1-->
+    <div class="modal fade" id="cotizarServicio1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="cotizarServicio1_Title">Servicio 1</h1>
                 </div>
             </div>
             <div class="footer-item">
