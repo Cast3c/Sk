@@ -552,7 +552,7 @@ button {
 .aboutUs {
     position: relative;
     top: -12rem;
-    background-image: url('../Recursos\ Pag\ WEB\ SK/fotos-optimized/background-who-we-r.jpg');
+    background-image: url('../media/background-who-we-r.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
