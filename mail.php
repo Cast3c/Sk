@@ -1,11 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-    $nombre = $_POST['nombreEmpresa'];
-
-    var_dump($nombre);
-    
-=======
 $nombre = $_POST['nombreEmpresa'];
 $telefono = $_POST['telefonoContacto'];
 $ciudad = $_POST['ciudadContacto'];
@@ -30,4 +23,3 @@ $headers.="Content-type: text/html; charset=utf-8 \r\n";
 mail('sanityking@gmail.com', 'Email pagina web', $body, $headers);
 
 header("Location:https://sanityking.com/#contacto");
->>>>>>> d211e769da4d84b3bc79ef9b8b4944b9daf6acc1
