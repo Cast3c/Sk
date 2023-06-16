@@ -1,0 +1,354 @@
+:root {
+    --bg-body: whitesmoke;
+    --green1: #C3F040;
+    --green2: #88BC07;
+    --green3: #08AC2B;
+    --green4: #078E22;
+    --green5: #234A42;
+    --blanco: #FFFFFF;
+    --gris: #F1F1F1;
+    --shadow: rgba(209, 209, 209, 0.8);
+    --text-color: rgba(1, 1, 1, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: transparent;
+
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Kusanagi';
+    src: url('../fonts/Kusanagi.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto regular';
+    src: url('../fonts/Roboto-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto black';
+    src: url('../fonts/Roboto-Black.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    z-index: -99;
+}
+
+.section {
+    padding: 4.5rem 0 1rem;
+}
+
+/*========= CONTROL DE PLAGAS =========*/
+.control-plagas-container {
+    padding: 0.5rem;
+}
+
+.control-plagas-header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-left-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.img-container::before {
+    content: "";
+    width: 550px;
+    height: 50px;
+    background-color: var(--green1);
+    position: absolute;
+    top: 40%;
+    left: 350px;
+    z-index: -1;
+}
+
+.header-right-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.title-header-right-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: -1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.title-header-right-data>p {
+    color: var(--green3);
+    line-height: 1.2;
+}
+
+.title-header-right-data>span {
+    margin-top: -30px;
+    color: var(--green5);
+}
+
+.quote-header-right-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+.quote-header-right-data>p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.quote-header-right-data>a {
+    background-color: var(--green5);
+    color: var(--green1);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.4rem 3rem;
+    border-radius: 25px;
+}
+
+.proceso-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.proceso-plaga-title {
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-title {
+    position: absolute;
+    z-index: -1;
+    max-width: 300px;
+    top: -10px;
+}
+
+.title-left {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green3);
+}
+
+.title-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-line {
+    min-width: 600px;
+    border-bottom: 2px solid var(--green3);
+}
+
+.proceso-cards-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.proceso-card-content {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+.proceso-card-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--blanco);
+    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    box-shadow: 1px 1px 15px rgba(209, 209, 209, 0.8);
+    z-index: 1;
+    padding: 0.6rem;
+}
+
+.proceso-card-info {
+    width: 180px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blanco);
+    position: absolute;
+    gap: 7px;
+    top: 40px;
+    padding: 1.3rem;
+    border-radius: 60px 25px 60px 25px;
+    z-index: 0;
+    box-shadow: 1px 1px 5px rgba(209, 209, 209, 0.8);
+}
+
+.card-info-title{
+    font-weight: 700;
+    color: var(--green3);
+}
+
+.card-info-quote{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proceso-card-number {
+    width: 45px;
+    height: 55px;
+    background-color: var(--green5);
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 10px 10px 30px 10px;
+    color: var(--green1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.formulario-container{
+    border-top: 2px solid var(--green3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
+    gap: 2.5rem;
+}
+
+.form-title{
+    padding-top: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.form-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-data > input{
+    padding: 0.5rem 0 0.5rem 0.5rem ;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px var(--shadow);
+}
+
+.form-data > input::placeholder{
+    font-size: 0.8rem;
+}
+
+.form-data > textarea{
+    padding: 0.5rem 0 0.5rem 0.5rem ;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px var(--shadow);
+}
+
+.form-data > textarea::placeholder{
+    font-size: 0.8rem;
+}
+
+.form-data .submit{
+    padding: 0.3rem 2rem;
+    font-weight: 700;
+    color: var(--green1);
+    background-color: var(--green5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px var(--shadow);
+}

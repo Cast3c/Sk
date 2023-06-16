@@ -32,6 +32,7 @@ a {
 
 a:hover {
     color: transparent;
+
 }
 
 img {
@@ -68,16 +69,14 @@ button {
 }
 
 .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1024px;
 }
 
 .main {
     z-index: 0;
-    /* overflow: hidden; */
 }
 
 .section {
@@ -982,10 +981,6 @@ button {
     max-height: 15px;
 }
 
-/* .itemIconFooter > img{
-    object-fit: cover;
-} */
-
 .itemTitleFooter{
     display: grid;
     justify-content: start;
@@ -993,7 +988,6 @@ button {
     color: var(--blanco);
     font-size: 0.7rem;
 }
-
 
 
 /*============= BREAKPOINTS ============*/

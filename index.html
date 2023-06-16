@@ -5,8 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- ====== CSS ====== -->
+    <!-- prototype -->
     <link rel="stylesheet" href="./styles/stylesPrototype.css">
-
+    <!-- modals -->
+    <link rel="stylesheet" href="./styles/modals.css">
+    <!-- js -->
+    <script src="./js/main.js"></script>
     <!-- ====== BOOTSTRAP ====== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -139,7 +143,7 @@
                                     de negocio con nuestro servicio.</p>
                             </div>
                             <div class="service-card-cta">
-                                <a href="#" class="service-card-cta">VER SERVICIO</a>
+                                <a href="control-plagas.html" class="service-card-cta">VER SERVICIO</a>
                             </div>
                         </div>
                         <div class="service-card">
@@ -153,7 +157,7 @@
                                     establecimientos comerciales.</p>
                             </div>
                             <div class="service-card-cta">
-                                <a href="#" class="service-card-cta">VER SERVICIO</a>
+                                <a href="#modal" class="modal-btn service-card-cta">VER SERVICIO</a>
                             </div>
                         </div>
                         <div class="service-card">
@@ -350,23 +354,48 @@
         <section class="telefonos section">
             <div class="telefonos-container container">
                 <div class="telefonos-map">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=sanity king&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcuttemplate.org</a></div><style>.mapouter{position:relative;text-align:left;width:420px;height:200px;}.gmap_canvas {overflow:hidden;background:none!important;width:420px;height:200px;}.gmap_iframe {width:420px!important;height:200px!important;}</style></div>
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=sanity king&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                href="https://capcuttemplate.org/">Capcuttemplate.org</a></div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: left;
+                                width: 420px;
+                                height: 200px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                width: 420px;
+                                height: 200px;
+                            }
+
+                            .gmap_iframe {
+                                width: 420px !important;
+                                height: 200px !important;
+                            }
+                        </style>
+                    </div>
                 </div>
                 <div class="telefonos-numeros">
                     <div class="tel-box">
                         <p>Ivone Marcela Lobo<br>
-                        (+57) 304 523 46 00 <br>
-                        finaciera@sanityking.com</p>
+                            (+57) 304 523 46 00 <br>
+                            finaciera@sanityking.com</p>
                     </div>
                     <div class="tel-box">
                         <p>Andres Felipe Quiroga <br>
-                        (+57) 300 506 12 91 <br>
-                        operaciones@sanityking.com</p>
+                            (+57) 300 506 12 91 <br>
+                            operaciones@sanityking.com</p>
                     </div>
                     <div class="tel-box">
                         <p>Laura Constanza Soler <br>
-                        (+57) 316 628 29 66 <br>
-                        info@sanityking.com</p>
+                            (+57) 316 628 29 66 <br>
+                            info@sanityking.com</p>
                     </div>
                 </div>
             </div>
@@ -479,7 +508,7 @@
             </div>
             <div class="footer-item">
                 <div class="itemTitleFooter">
-                    Sanity King - Sanemamiento Ambiental S.A.S. 
+                    Sanity King - Sanemamiento Ambiental S.A.S.
                 </div>
             </div>
             <div class="footer-item">
@@ -494,6 +523,156 @@
             </div>
         </div>
     </footer>
+    <!--========= MODALES =========-->
+    <div class="overlay"></div>
+    <div id="modal" class="modal-overlay container">
+        <div class="modal-content">
+            <div class="title">
+                <h2>LAVADO Y DESINFECCION DE TANQUES:</h2>
+                <a href="#" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="modal-data">
+                <!-- MODAL HEADER -->
+                <section class="section-modal modal-header">
+                    <div class="left-header-modal">
+                        <img src="./media/lavado-tanques.png" alt="">
+                    </div>
+                    <div class="right-header-modal">
+                        <div class="modal-header-data">
+                            <div class="modal-quote1">
+                                <p>Realizamos la limpieza y desinfección profesional
+                                    de todo tipo de tanques en industria, comercio y
+                                    unidades residenciales.</p>
+                            </div>
+                            <div class="modal-divisor"></div>
+                            <div class="modal-quote2">
+                                <p>Trabajamos bajo todas las medidas de seguridad para
+                                    trabajar en alturas o espacios confinados. También se
+                                    realiza en cumplimiento de la normatividad, que establece
+                                    que este debe realizarse como mínimo dos veces al año
+                                    Decreto 1575/2007.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- MODAL PROCESO -->
+                <section class="section-modal modal-proceso">
+                    <div class="proceso-modal-title">
+                        <div class="img-title">
+                            <img src="./media/proceso-fondo.png" alt="">
+                        </div>
+                        <div class="title-left">
+                            <span>PROCESO</span>
+                        </div>
+                        <div class="title-right">
+                            <span class="right-line"></span>
+                        </div>
+                    </div>
+                    <div class="proceso-modal-cards">
+                        <div class="proceso-card-content">
+                            <div class="proceso-card-icon">
+                                <img src="./Recursos Pag WEB SK/Iconos/ojo-icon.png" alt="">
+                            </div>
+                            <div class="proceso-card-info">
+                                <div class="card-info-title">
+                                    <span>Inspección</span>
+                                </div>
+                                <div class="card-info-quote">
+                                    <p>Visita y verificación del tanque
+                                        (presencial o digital).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="proceso-card-number">
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <div class="proceso-card-content">
+                            <div class="proceso-card-icon">
+                                <img src="./Recursos Pag WEB SK/Iconos/checklist-icon.png" alt="">
+                            </div>
+                            <div class="proceso-card-info">
+                                <div class="card-info-title">
+                                    <span>Limpieza</span>
+                                </div>
+                                <div class="card-info-quote">
+                                    <p>Remoción de sedimentos,
+                                        suciedad y contaminantes
+                                        del tanque.</p>
+                                </div>
+                            </div>
+                            <div class="proceso-card-number">
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <div class="proceso-card-content">
+                            <div class="proceso-card-icon">
+                                <img src="./Recursos Pag WEB SK/Iconos/desinfeccion-icon.png" alt="">
+                            </div>
+                            <div class="proceso-card-info">
+                                <div class="card-info-title">
+                                    <span>Desinfección</span>
+                                </div>
+                                <div class="card-info-quote">
+                                    <p>Eliminación de virus,
+                                        bacterías y hongos
+                                        presentes en el tanque.</p>
+                                </div>
+                            </div>
+                            <div class="proceso-card-number">
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="proceso-card-content">
+                            <div class="proceso-card-icon">
+                                <img src="./Recursos Pag WEB SK/Iconos/medicion-icon.png" alt="">
+                            </div>
+                            <div class="proceso-card-info">
+                                <div class="card-info-title">
+                                    <span>Seguimiento</span>
+                                </div>
+                                <div class="card-info-quote">
+                                    <p>Identificamos el tipo de plaga
+                                        y factores que favorecen su
+                                        proliferación.</p>
+                                </div>
+                            </div>
+                            <div class="proceso-card-number">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <!-- MODAL QUOTE -->
+                <section class="section-modal modal-quote">
+                <div class="modal-quote-title">
+                    <p>¿CUANDO LAVAR EL TANQUE DE
+                        RESERVA DE AGUA POTABLE?</p>
+                </div>
+                <div class="modal-quote-data">
+                    <p>Recuerda que el lavado de los tanques de almacenamiento de agua potable se debe realizar cada vez que se evidencie suciedad acumulada o como mínimo cada 6 meses, según lo dispuesto en el Decreto 1575/2007</p>
+                </div>
+                </section>
+                <!-- MODAL FORM -->
+                <section class="section-modal modal-form">
+                    <div class="formulario-container">
+                        <div class="form-container">
+                            <div class="form-title">
+                                <span>Déjanos tu mensaje, nos contáctaremos lo antes posible.</span>
+                            </div>
+                            <form action="" method="post" class="form-data">
+                                <input type="text" name="" id="" placeholder="Nombre o empresa:*">
+                                <input type="email" name="" id="" placeholder="Correo electrónico:*">
+                                <input type="tel" name="" id="" placeholder="Celular:*">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje:*"></textarea>
+                                <button type="submit" class="submit">ENVIAR</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
         </script>
