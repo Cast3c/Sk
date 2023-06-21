@@ -2,21 +2,43 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     //=========MODALES=========//
-    var modalBtn = document.querySelector('.modal-btn');
-    var modal = document.querySelector('#modal');
+    var modalBtn1 = document.querySelector('.modal-btn1');
+    var modalBtn2 = document.querySelector('.modal-btn2');
+    var modalClose1 = document.querySelector('.modal-close1');
+    var modalClose2 = document.querySelector('.modal-close2');
+    var modalDesinfeccion = document.querySelector('.modal-desinfeccion');
+    var modalFumigacion = document.querySelector('.modal-fumigacion');
     var overlay = document.querySelector('.overlay');
-    var modalClose = document.querySelector('.modal-close');
+    
+    var body = document.querySelector('body');
   
-    modalBtn.addEventListener('click', function(event) {
+    modalBtn1.addEventListener('click', function(event) {
       event.preventDefault();
-      modal.style.display = 'flex';
+      modalDesinfeccion.style.display = 'flex';
       overlay.style.display = 'block';
+      body.style.overflow = 'hidden';
     });
-  
-    modalClose.addEventListener('click', function(event) {
+
+    modalBtn2.addEventListener('click', function(event){
       event.preventDefault();
-      modal.style.display = 'none';
+      modalFumigacion.style.display = 'flex';
+      overlay.style.display = 'block';
+      body.style.overflow = 'hidden';
+    })
+  
+    modalClose1.addEventListener('click', function(event) {
+      event.preventDefault();
+      modalDesinfeccion.style.display = 'none';
       overlay.style.display = 'none';
+      body.style.overflow = 'auto';
     });
+
+    modalClose2.addEventListener('click', function(event){
+      event.preventDefault();
+      modalFumigacion.style.display = 'none';
+      overlay.style.display = 'none';
+      body.style.overflow = 'auto';
+    })
+    
     //=========+++++++=========//
   });

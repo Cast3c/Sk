@@ -42,7 +42,17 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  display: block;
+  display: none;
+}
+
+.modal-desinfeccion{
+  display: none;
+  overflow: auto;
+}
+
+.modal-fumigacion{
+  display: none;
+  overflow: auto;
 }
 
 .modal-overlay {
@@ -51,9 +61,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  display: flex;
   padding: 3rem;
-  overflow: auto;
   height: 100vh;
 }
 
@@ -160,6 +168,25 @@
   font-size: 0.8rem;
   text-align: justify;
   font-style: oblique;
+}
+
+.modal-quote3-contain{
+  position: relative;
+  width: fit-content;
+  height: min-content;
+}
+
+
+
+.modal-quote3-content{
+  border: 3px solid var(--green1);
+  padding: -1rem 1rem -1rem;
+  text-align: center;
+  color: var(--green5);
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Roboto regular';
+  z-index: 1002;
 }
 
 .modal-divisor {
