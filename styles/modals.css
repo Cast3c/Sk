@@ -45,12 +45,17 @@
   display: none;
 }
 
-.modal-desinfeccion{
+.modal-tanques{
   display: none;
   overflow: auto;
 }
 
 .modal-fumigacion{
+  display: none;
+  overflow: auto;
+}
+
+.modal-desinfeccion{
   display: none;
   overflow: auto;
 }
@@ -124,6 +129,7 @@
 
 .section-modal {
   max-width: fit-content;
+  
 }
 
 .modal-header {
@@ -225,6 +231,7 @@
   flex-direction: row;
   column-gap: 2rem;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 3rem ;
 }
 
 .img-title {
