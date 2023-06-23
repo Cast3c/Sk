@@ -18,6 +18,41 @@
     margin-top: 100vh;
 }
 
+/** Background waves **/
+.wavesBg {
+    margin-top: -10vh;
+    left: 0vw;
+    border-top: 300px solid var(--green3);
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavesBg svg {
+    position: relative;
+    display: block;
+    width: 100vw;
+}
+
+.custom-shape-divider-top {
+    position: absolute;
+    top: -10vh;
+    left: -6vw;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    width: calc(100vw + 1.3px);
+    height: 650px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: var(--green4);
+}
+
+/** ····················· **/
 
 /** PRODUCTS SECTION **/
 .productsWrapper {
