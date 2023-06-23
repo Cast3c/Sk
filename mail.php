@@ -22,6 +22,6 @@ $headers.="Content-type: text/html; charset=utf-8 \r\n";
 //REMITENTE (NOMBRE/APELLIDO)
 //ASUNTO
 //CUERPO
-mail('sanityking@gmail.com', 'Email pagina web', $body, $headers);
+mail('comercial1sanityking@gmail.com', 'Email pagina web', $body, $headers);
 
 header("Location:https://sanityking.com/#home");

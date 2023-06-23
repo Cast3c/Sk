@@ -176,6 +176,10 @@ button {
     border-bottom: .3rem solid var(--green3);
 }
 
+.navbar-btn{
+    display: none;
+}
+
 /* ========= HOME ========= */
 .home {
     background-image: url('../Recursos\ Pag\ WEB\ SK/Fotos-optimized/background-home.jpg');
@@ -215,6 +219,7 @@ button {
     font-size: 1.3rem;
     font-weight: 700;
     color: rgba(1, 1, 1, 0.5);
+    padding-right: 2rem;
 }
 
 .cta-home {
@@ -251,7 +256,7 @@ button {
 
 .carousel-item {
     min-width: 700px;
-    object-fit: COVER;
+    object-fit: cover;
 }
 
 .carousel-btns {
@@ -1013,6 +1018,117 @@ button {
 
 
 /*============= BREAKPOINTS ============*/
+
+/* for small devices */
+@media screen and (max-width: 400px){
+    /* ====== HEADER ====== */
+    .header{
+        max-width: 400px;
+    }
+    
+    .nav{
+        height: auto;
+        padding: 0 1rem;
+        justify-content: space-around;
+    }
+
+    .nav-brand{
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .nav-logo{
+        width: 50px;
+        height: 45px;
+    }
+    
+    .nav-title{
+        font-size: 1rem;
+    }
+
+    .nav-menu{
+        top: 2.8rem;
+        background-color: var(--blanco);
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        display: none ;
+        filter: blur(10px);
+        opacity: 0;
+        
+    }
+
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-btn{
+        display: flex;
+        color: var(--green3);
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.5);
+    }
+
+    .fa-bars{
+        font-size: 2rem;
+    }
+
+    /* ====== HOME ====== */
+
+    .home-container{
+        flex-direction: column-reverse;
+    }
+
+    .home-data{
+        align-items: center;
+    }
+
+    .home-title{
+        font-size: 1.8rem;
+    }
+
+    .home-quote{
+        justify-content: center;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .carousel-inner{
+        max-width: 300px;
+        max-height: 300px;
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-item{
+        min-width: 100%;
+    }
+
+    /* =============== */
+    .services{
+        display: none;
+    }
+    .aboutUs{
+        display: none;
+    }
+    .contacto{
+        display: none;
+    }
+    .telefonos{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    
+}
+
+/* for medium devices */
+
+@media screen and (min-width: 767px){
+
+}
 /* For large devices */
 @media screen and (min-width: 1024px) {
 
@@ -1039,3 +1155,5 @@ button {
         min-width: 500px;
     }
 }
+
+
