@@ -1,8 +1,9 @@
 <?php
-$nombre = $_POST['nombreEmpresa'];
-$telefono = $_POST['telefonoContacto'];
-$ciudad = $_POST['ciudadContacto'];
-$mail = $_POST['mailContacto'];
+$nombre = $_POST['nombre'];
+$telefono = $_POST['telefono'];
+$ciudad = $_POST['ciudad'];
+$mail = $_POST['correo'];
+$asunto = $_POST['asunto'];
 
 $body = <<<HTML
     <h2>Contacto desde Pagina Web</h2>
@@ -12,6 +13,7 @@ $body = <<<HTML
         $telefono<br>
         $ciudad<br>
         $mail<br>
+        $asunto
     </p>
 HTML;
 
@@ -20,6 +22,6 @@ $headers.="Content-type: text/html; charset=utf-8 \r\n";
 //REMITENTE (NOMBRE/APELLIDO)
 //ASUNTO
 //CUERPO
-mail('sanityking@gmail.com', 'Email pagina web', $body, $headers);
+mail('ricardo.castellarp@gmail.com', 'Email pagina web', $body, $headers);
 
-header("Location:https://sanityking.com/#contacto");
+header("Location:https://sanityking.com/#home");

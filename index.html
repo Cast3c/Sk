@@ -65,7 +65,7 @@
                         las mejores prácticas y la normatividad
                         colombiana vigente.
                     </p>
-                    <a href="#" class="cta-home" type="button">CONTÁCTANOS</a>
+                    <a href="#contacto" class="cta-home" type="button">CONTÁCTANOS</a>
                 </div>
                 <div class="home-carousel">
                     <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -122,7 +122,7 @@
                             asesorías ambientales y manipulación de alimentos.
                         </div>
                         <div class="services-btn">
-                            <a href="" class="cta-services" type="button">COTIZAR SERVICIOS</a>
+                            <a href="#contacto" class="cta-services" type="button">COTIZAR SERVICIOS</a>
                         </div>
                     </div>
                 </div>
@@ -307,7 +307,7 @@
             </div>
         </section>
         <!--========= CONTACTO =========-->
-        <section class="contacto section" id="contacto">
+        <section class="contacto section" id="">
             <div class="contacto-container container">
                 <div class="contacto-data">
                     <div class="contacto-title-box">
@@ -338,13 +338,13 @@
                             Regístrate y nos comunicaremos contigo.</p>
                     </div>
                 </div>
-                <div class="contacto-form">
-                    <form action="" method="post">
+                <div class="contacto-form" id="contacto">
+                    <form action="mail.php" method="POST">
                         <input class="input" type="text" name="nombre" id="name" placeholder="Nombre o empresa:*">
                         <input class="input" type="tel" name="telefono" id="tel" placeholder="Celular:*">
                         <input class="input" type="text" name="ciudad" id="city" placeholder="Ciudad:*">
                         <input class="input" type="email" name="correo" id="mail" placeholder="Mail:*">
-                        <textarea class="input" name="" id="" cols="30" rows="5" placeholder="Asunto:*"></textarea>
+                        <textarea class="input" name="asunto" id="" cols="30" rows="5" placeholder="Asunto:*"></textarea>
                         <button class="btn-enviar" type="submit">ENVIAR</button>
                     </form>
                 </div>
