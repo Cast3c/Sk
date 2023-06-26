@@ -1157,6 +1157,7 @@ button {
     .cards-container{
         grid-template-columns: 1fr;
         padding: 1.5rem;
+        row-gap: 1.5rem;
     }
 
     .cards-title{
