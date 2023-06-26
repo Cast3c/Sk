@@ -1200,6 +1200,7 @@ button {
 
     .asesoria-option{
         min-width: 300px;
+        max-width: 300px;
     }
     
     .option-icon{
