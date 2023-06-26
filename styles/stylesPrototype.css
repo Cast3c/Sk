@@ -140,7 +140,18 @@ button {
 .nav-title {
     font-family: 'Kusanagi';
     color: var(--green5);
+    
+}
+
+.nav-title > a{
+    text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green5);
+}
+
+.nav-title > a:visited{
+    color: var(--green5);
 }
 
 .nav-menu {
@@ -1231,6 +1242,7 @@ button {
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
+        row-gap: 1rem;
     }
 
     .about-us-circle::before {
@@ -1238,6 +1250,7 @@ button {
     }
 
     .about-us-data {
+        row-gap: 1rem;
         padding-left: 2rem;
     }
 

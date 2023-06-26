@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } 
   })
 
+  navMenu.addEventListener('click', function(){
+    navMenu.style.display = 'none';
+  })
+
   //=========MODALES=========//
   var modalBtn1 = document.querySelector(".modal-btn1");
   var modalBtn2 = document.querySelector(".modal-btn2");
