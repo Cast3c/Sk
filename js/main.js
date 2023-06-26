@@ -6,11 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     if (navMenu.style.display === 'flex') {
       navMenu.style.display = 'none'
-      navMenu.style.filter = 'blur(10px)'
     } else {
       navMenu.style.display = 'flex'
-      navMenu.style.filter = 'blur(0)'
-      navMenu.style.opacity = '1';
+      navMenu.style.opacity = '0.9';
     } 
   })
 

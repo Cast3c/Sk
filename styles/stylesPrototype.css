@@ -1020,10 +1020,12 @@ button {
 /*============= BREAKPOINTS ============*/
 
 /* for small devices */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 414px){
     /* ====== HEADER ====== */
     .header{
-        max-width: 400px;
+        max-width: 414px;
+        min-width: 320px;
+        background-color: #e4e4e4;
     }
     
     .nav{
@@ -1048,14 +1050,11 @@ button {
 
     .nav-menu{
         top: 2.8rem;
-        background-color: var(--blanco);
+        background-color: rgba(255, 255, 255, 0.8);
         width: 400px;
         justify-content: center;
         align-items: center;
         display: none ;
-        filter: blur(10px);
-        opacity: 0;
-        
     }
 
     .nav-list{
@@ -1068,7 +1067,11 @@ button {
         display: flex;
         color: var(--green3);
         border-radius: 5px;
-        box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.5);
+        background-color: #FFFFFF;
+    }
+
+    .fa-solid{
+        background-color: #FFFFFF;
     }
 
     .fa-bars{
@@ -1093,6 +1096,9 @@ button {
         justify-content: center;
         font-size: 1rem;
         text-align: center;
+        font-weight: 500;
+        text-align: left;
+        padding-right: 0;
     }
 
     .carousel-inner{
@@ -1105,10 +1111,111 @@ button {
         min-width: 100%;
     }
 
-    /* =============== */
+    /* ====== SERVICES ====== */
     .services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-data{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-logo{
+        width: 80px;
+    }
+
+    .services-title1{
+        font-size: 1.5rem;
+    }
+
+    .services-title2{
+        font-size: 2rem;
+    }
+
+    .services-btn{
+        justify-content: center;
+    }
+    
+    .service-card-image{
+        min-width: 220px;
+        min-height: 130px;
+    }
+
+    .services-quote{
+        color: var(--text-color);
+        font-weight: 500;
+    }
+
+    .services-cards-container{
+        min-width: 300px;
+        max-width: 310px;
+        border-radius: 50px;
+    }
+
+    .cards-container{
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .cards-title{
+        min-width: 200px;
+    }
+
+    .service-card{
+        padding: 1rem;
+    }
+
+    .service-card-title{
+        font-size: 1rem;
+    }
+
+    .service-card-quote{
         display: none;
     }
+
+    .service-card-cta{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .service-card-cta>a{
+        font-size: 1rem;
+    }
+
+    .boxBg-asesorias-title{
+        max-width: 200px;
+        top: -12.2rem;
+    }
+
+    .asesorias-title{
+        text-align: center;
+        max-width: 280px;
+        font-size: 1.2rem;
+    }
+
+    .asesoria-option{
+        min-width: 300px;
+    }
+    
+    .option-icon{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-right: 2px solid var(--green5);
+    }
+
+    .option-title{
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .option-arrow-icon{
+        padding-right: 1rem;
+    }
+    /* =============== */
+    
     .aboutUs{
         display: none;
     }
