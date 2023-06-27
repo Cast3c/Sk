@@ -551,8 +551,12 @@ button {
     background-color: var(--blanco);
 }
 
+.asesoria-alimentos{
+    cursor: pointer;
+}
+
 .option-icon {
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    padding: 0.5rem .5rem 0.5rem 1.5rem;
     border-right: 1px solid var(--green5);
 }
 
@@ -1271,19 +1275,84 @@ button {
         font-size: 0.9rem;
     }
 
-    /* =============== */
+    /* ====== CONTACTO ====== */
 
+    .contacto-container {
+        margin-top: -22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-    .contacto {
+    .contacto-data{
+        padding: 1rem;
+    }
+
+    .contacto-title{
+        color: var(--green5);
+        /* text-shadow: 1px 1px 12px var(--blanco); */
+    }
+
+    .contacto-form{
+        margin: 0;
+    }
+
+    /*========= MAPA Y TEL =========*/
+
+    .telefonos-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .telefonos-map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapouter{
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .gmap_canvas{
+        max-width: 300px;
+        height: 200px; 
+    }
+
+    .telefonos-numeros{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .clientes-container{
         display: none;
     }
 
-    .telefonos {
-        display: none;
+    .newsletter-bar{
+        max-width: 415px;
+        min-width: 300px;
+        flex-direction: column;
     }
+
+    /*========= FOOTER =========*/
 
     .footer {
-        display: none;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 2rem;
+        padding-top: 4rem;
+    }
+
+    .central{
+        border: none;
     }
 
 }
