@@ -53,9 +53,6 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    color: transparent;
-}
 
 img {
     object-fit: cover;
@@ -491,15 +488,25 @@ button {
     justify-content: end;
     align-items: center;
     text-decoration: none;
-    color: var(--blanco);
 }
 
-.service-card-cta>a {
-    font-size: 0.6rem;
+.service-card-cta >a {
+    font-size: 0.8rem;
     font-weight: 700;
     padding: 0.2rem 1rem;
     border-radius: 25px;
     background-color: var(--green3);
+    text-decoration: none;
+    color: var(--blanco);
+    box-shadow: 1px 1px 10px rgba(1, 1, 1, 0.5);
+}
+
+.service-card-cta > a:hover{
+    color: var(--blanco);
+}
+
+.service-card-cta >a:visited{
+    color: var(--blanco);
 }
 
 .asesorias-container {
