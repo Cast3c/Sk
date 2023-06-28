@@ -377,6 +377,7 @@ button {
     grid-row: 1 / span 2;
     display: grid;
     align-items: end;
+    font-weight: 500;
 }
 
 .services-btn {
@@ -461,7 +462,7 @@ button {
 
 .service-card-title {
     font-size: .8rem;
-    font-weight: 700;
+    font-weight:700;
     color: var(--green3);
     display: grid;
     justify-content: start;

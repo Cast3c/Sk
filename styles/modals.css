@@ -11,7 +11,6 @@
   --text-color: rgba(1, 1, 1, 0.5);
 }
 
-
 @font-face {
   font-family: 'Kusanagi';
   src: url('../fonts/Kusanagi.woff') format("woff");
@@ -111,37 +110,37 @@
   display: none;
 }
 
-.modal-tanques{
+.modal-tanques {
   display: none;
   overflow: auto;
 }
 
-.modal-fumigacion{
+.modal-fumigacion {
   display: none;
   overflow: auto;
 }
 
-.modal-desinfeccion{
+.modal-desinfeccion {
   display: none;
   overflow: auto;
 }
 
-.modal-trampas{
+.modal-trampas {
   display: none;
   overflow: auto;
 }
 
-.modal-senales{
+.modal-senales {
   display: none;
   overflow: auto;
 }
 
-.modal-alimentos{
+.modal-alimentos {
   display: none;
   overflow: auto;
 }
 
-.modal-asesorias{
+.modal-asesorias {
   display: none;
   overflow: auto;
 }
@@ -266,7 +265,7 @@
   font-style: oblique;
 }
 
-.modal-quote3-contain{
+.modal-quote3-contain {
   position: relative;
   width: fit-content;
   height: min-content;
@@ -276,7 +275,7 @@
   align-items: center;
 }
 
-.modal-quote3-img1{
+.modal-quote3-img1 {
   position: absolute;
   z-index: 11;
   top: -1rem;
@@ -284,7 +283,7 @@
   max-width: 50px;
 }
 
-.modal-quote3-img2{
+.modal-quote3-img2 {
   position: absolute;
   z-index: 11;
   bottom: -1rem;
@@ -293,7 +292,7 @@
   transform: rotate(180deg);
 }
 
-.modal-quote3-content{
+.modal-quote3-content {
   padding: 0.5rem 3rem;
   text-align: center;
   color: var(--green5);
@@ -315,15 +314,13 @@
   align-items: start;
 }
 
-
-
 .proceso-modal-title {
   display: grid;
   justify-content: center;
   flex-direction: row;
   column-gap: 2rem;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 3rem ;
+  padding-bottom: 3rem;
 }
 
 .img-title {
@@ -351,14 +348,14 @@
   align-items: center;
 }
 
-.modal-proceso{
+.modal-proceso {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-.modal-proceso1{
+.modal-proceso1 {
   background-color: var(--green5);
   border-radius: 25px;
   display: grid;
@@ -370,7 +367,7 @@
   max-height: 300px;
 }
 
-.modal-proceso1-opt{
+.modal-proceso1-opt {
   background-color: var(--green5);
   border-radius: 25px;
   display: grid;
@@ -382,7 +379,7 @@
   max-height: 300px;
 }
 
-.modal-proceso1-data{
+.modal-proceso1-data {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,14 +388,14 @@
 }
 
 
-.modal-proceso1-title{
+.modal-proceso1-title {
   font-size: 1.2rem;
   color: var(--green1);
   font-family: 'Roboto regular';
   font-weight: 700;
 }
 
-.modal-proceso1-quote{
+.modal-proceso1-quote {
   padding: 0 2.5rem;
   color: var(--blanco);
   font-size: 0.8rem;
@@ -408,23 +405,23 @@
   column-gap: 2rem;
 }
 
-.modal-proceso1-quote-img{
+.modal-proceso1-quote-img {
   width: 80px;
 }
 
-.modal-proceso1-quote-opt{
+.modal-proceso1-quote-opt {
   padding: 0 2.5rem;
   color: var(--blanco);
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.modal-proceso1-divisor{
+.modal-proceso1-divisor {
   display: grid;
   justify-content: center;
 }
 
-.modal-proceso1-divisor > img{
+.modal-proceso1-divisor>img {
   object-fit: cover;
   max-height: 150px;
 }
@@ -468,8 +465,8 @@
 }
 
 .proceso-card-info {
-  width: 180px;
-  height: 150px;
+  width: 200px;
+  height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,9 +513,10 @@
   font-weight: 700;
 }
 
-.quote-card{
+.quote-card {
   box-shadow: none;
 }
+
 /* MODAL QUOTE */
 
 .modal-quote {
@@ -547,12 +545,12 @@
 .modal-quote-data {
   font-size: 0.7rem;
   max-width: 400px;
-  display: grid; 
+  display: grid;
   justify-content: center;
   color: var(--text-color);
 }
 
-.point-quote-data{
+.point-quote-data {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -561,7 +559,7 @@
   margin-right: 5px;
 }
 
-.quote-data-title{
+.quote-data-title {
   font-weight: 700;
 }
 
@@ -594,12 +592,12 @@
 .modal-quote-data-opt {
   font-size: 1rem;
   font-weight: 500;
-  display: grid; 
+  display: grid;
   justify-content: center;
   color: var(--text-color);
 }
 
-.quote-data-opt{
+.quote-data-opt {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
@@ -609,7 +607,7 @@
   text-align: center;
 }
 
-.quote-data-opt1{
+.quote-data-opt1 {
   text-align: center;
   color: var(--green3);
   font-style: oblique;
@@ -618,7 +616,7 @@
   max-width: 500px;
 }
 
-.quote-data-columns-opt{
+.quote-data-columns-opt {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -626,7 +624,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.data-column-opt{
+.data-column-opt {
   display: flex;
   justify-content: flex-start;
   align-items: start;
@@ -634,30 +632,30 @@
   row-gap: 1rem;
 }
 
-.column-opt-icon{
+.column-opt-icon {
   display: flex;
   justify-content: flex-start;
   width: 40px;
 }
 
-.column-opt-title{
+.column-opt-title {
   color: var(--text-color);
   font-weight: 700;
   text-align: start;
 }
 
-.column-opt-title1{
+.column-opt-title1 {
   color: var(--green3);
   text-align: start;
 }
 
-.column-opt-title2{
+.column-opt-title2 {
   color: var(--green3);
   font-weight: 500;
   font-style: oblique;
 }
 
-.column-opt-quote{
+.column-opt-quote {
   color: var(--text-color);
   font-size: 0.7rem;
   display: grid;
@@ -667,12 +665,13 @@
   max-width: 150px;
 }
 
-.complete-text-opt{
+.complete-text-opt {
   color: transparent;
   max-width: 150px;
 }
+
 /* MODAL FORM */
-.modal-form{
+.modal-form {
   position: relative;
   left: 20px;
   display: flex;
@@ -683,13 +682,13 @@
   max-width: 936px;
 }
 
-.formulario-container{
+.formulario-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-container{
+.form-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -698,13 +697,13 @@
   gap: 2.5rem;
 }
 
-.form-title{
+.form-title {
   padding-top: 2.5rem;
   color: var(--text-color);
   font-weight: 700;
 }
 
-.form-data{
+.form-data {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -712,35 +711,149 @@
   gap: 15px;
 }
 
-.form-data > input{
-  padding: 0.5rem 0 0.5rem 0.5rem ;
+.form-data>input {
+  padding: 0.5rem 0 0.5rem 0.5rem;
   width: 300px;
   border: none;
   border-radius: 10px;
   box-shadow: 2px 2px 15px var(--shadow);
 }
 
-.form-data > input::placeholder{
+.form-data>input::placeholder {
   font-size: 0.8rem;
 }
 
-.form-data > textarea{
-  padding: 0.5rem 0 0.5rem 0.5rem ;
+.form-data>textarea {
+  padding: 0.5rem 0 0.5rem 0.5rem;
   width: 300px;
   border: none;
   border-radius: 10px;
   box-shadow: 2px 2px 15px var(--shadow);
 }
 
-.form-data > textarea::placeholder{
+.form-data>textarea::placeholder {
   font-size: 0.8rem;
 }
 
-.form-data .submit{
+.form-data .submit {
   padding: 0.3rem 2rem;
   font-weight: 700;
   color: var(--green1);
   background-color: var(--green5);
   border-radius: 20px;
   box-shadow: 2px 2px 10px var(--shadow);
+}
+
+/*============= BREAKPOINTS ============*/
+
+@media screen and (max-width: 480px) {
+  .title {
+    max-width: 415px;
+    text-align: center;
+  }
+
+  .modal-close {
+    display: none;
+  }
+
+  .modal-data {
+    max-width: 415px;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-header-modal {
+    max-width: 300px;
+  }
+
+  .modal-header-data .modal-quote1 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .modal-header-data .modal-quote2 {
+    font-size: 1rem;
+  }
+
+  /* ====== */
+  .modal-proceso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .proceso-modal-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-title {
+    display: flex;
+    justify-content: flex-start;
+    left: 0;
+  }
+
+  .title-left {
+    left: 0;
+    top: -400px;
+  }
+
+  .proceso-modal-cards {
+    max-width: 300px;
+    left: 0;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    top: -400px;
+    row-gap: -2rem;
+  }
+
+  .proceso-card-icon{
+    top: 10px;
+  }
+
+  .proceso-card-info {
+    width: 200px;
+    height: 170px;
+  }
+
+  .card-info-title{
+    padding-top: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .card-info-quote{
+    font-size: 1rem;
+  }
+
+  .proceso-card-number{
+    right: 30px;
+    bottom: 10px;
+  }
+
+  .modal-quote {
+    width: 100%;
+    min-width: 320px;
+    grid-template-columns: repeat(1, 1fr);
+    left: 0;
+    top: -400px;
+  }
+
+  .modal-quote-title{
+    text-align: center;
+  }
+
+  .modal-quote-data{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .modal-form {
+    display: none;
+  }
 }
