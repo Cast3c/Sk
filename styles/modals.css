@@ -748,7 +748,8 @@
 
 @media screen and (max-width: 480px) {
   .title {
-    max-width: 415px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
   }
 
@@ -757,15 +758,29 @@
   }
 
   .modal-data {
-    max-width: 415px;
+    max-width: 400px;
   }
 
   .modal-header {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 
   .left-header-modal {
+    max-width: 300px;
+  }
+
+  .modal-header-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .modal-header-data>p {
     max-width: 300px;
   }
 
@@ -780,11 +795,57 @@
   }
 
   /* ====== */
+
+  .modal-proceso-trampas{
+    padding-bottom: 400px;
+  }
+
+  .modal-proceso-senales{
+    padding-bottom: 400px;
+  }
+
+  .modal-proceso-asesorias{
+    padding-bottom: 400px;
+  }
+
   .modal-proceso {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
+  }
+
+  .modal-proceso1-opt{
+    max-height: none;
+    padding: 0.5rem;
+  } 
+
+  .modal-proceso1-quote-img{
+    width: 150px;
+  }
+
+  .modal-proceso1-quote-opt{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .modal-proceso1 {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
+    position: relative;
+    z-index: 999;
+    max-height: none;
+    gap: 2rem;
+  }
+
+  .modal-proceso1-divisor {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
   }
 
   .proceso-modal-title {
@@ -813,7 +874,7 @@
     row-gap: -2rem;
   }
 
-  .proceso-card-icon{
+  .proceso-card-icon {
     top: 10px;
   }
 
@@ -822,19 +883,21 @@
     height: 170px;
   }
 
-  .card-info-title{
+  .card-info-title {
     padding-top: 1.2rem;
     font-size: 1.5rem;
   }
 
-  .card-info-quote{
+  .card-info-quote {
     font-size: 1rem;
   }
 
-  .proceso-card-number{
+  .proceso-card-number {
     right: 30px;
     bottom: 10px;
   }
+
+  /* quote-modal */
 
   .modal-quote {
     width: 100%;
@@ -844,16 +907,95 @@
     top: -400px;
   }
 
-  .modal-quote-title{
+  .modal-quote-title {
     text-align: center;
   }
 
-  .modal-quote-data{
+  .modal-quote-data {
     font-size: 1rem;
     font-weight: 500;
   }
 
+  .modal-quote3-img1 {
+    max-width: 30px;
+    top: -0.5rem;
+  }
+
+  .modal-quote3-img2 {
+    max-width: 30px;
+    bottom: -0.5rem;
+  }
+
+  .modal-quote3-content {
+    font-size: 1rem;
+  }
+
+  .modal-quote-opt {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+    min-width: 300px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    padding-bottom: 400px;
+  }
+
+  .modal-quote-title-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .quote-data-columns-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .quote-data-opt >p{
+    max-width: 400px;
+    font-weight: 500;
+  }
+
+  .data-column-opt{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-opt-icon{
+    width: 80px;
+  }
+
+  .column-opt-title{
+    font-size: 1.5rem;
+  }
+
+  .column-opt-quote{
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 250px;
+  }
+
+  /* quote - form */
+
+  .modal-form-asesoria{
+    padding-top: 400px;
+  }
+
+
   .modal-form {
-    display: none;
+    max-width: 400px;
+    top: -400px;
+    left: 0;
+  }
+
+  .form-title {
+    text-align: center;
   }
 }
