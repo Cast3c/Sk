@@ -600,7 +600,7 @@ button {
 /*====== ABOUT-US ======*/
 .aboutUs {
     position: relative;
-    top: -12rem;
+    top: -10rem;
     background-image: url('../media/background-who-we-r.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -1246,11 +1246,12 @@ button {
 
     .aboutUs {
         display: flex;
+        /* padding-top: 3rem; */
         top: -7rem;
     }
 
     .about-us-container {
-        margin-top: -7rem;
+        margin-top: -5rem;
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
