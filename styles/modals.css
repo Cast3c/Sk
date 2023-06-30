@@ -754,10 +754,28 @@
   }
 
   .modal-close {
-    display: none;
+    position:sticky;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    z-index: 11000;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--green1);
+    border: 1px solid var(--green1);
+  }
+
+  .modal-close .fa-xmark{
+    background-color: transparent;
   }
 
   .modal-data {
+    width: 100%;
     max-width: 400px;
   }
 
@@ -796,15 +814,15 @@
 
   /* ====== */
 
-  .modal-proceso-trampas{
+  .modal-proceso-trampas {
     padding-bottom: 400px;
   }
 
-  .modal-proceso-senales{
+  .modal-proceso-senales {
     padding-bottom: 400px;
   }
 
-  .modal-proceso-asesorias{
+  .modal-proceso-asesorias {
     padding-bottom: 400px;
   }
 
@@ -815,16 +833,16 @@
     height: auto;
   }
 
-  .modal-proceso1-opt{
+  .modal-proceso1-opt {
     max-height: none;
     padding: 0.5rem;
-  } 
+  }
 
-  .modal-proceso1-quote-img{
+  .modal-proceso1-quote-img {
     width: 150px;
   }
 
-  .modal-proceso1-quote-opt{
+  .modal-proceso1-quote-opt {
     font-size: 0.9rem;
     text-align: center;
   }
@@ -901,7 +919,7 @@
 
   .modal-quote {
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     grid-template-columns: repeat(1, 1fr);
     left: 0;
     top: -400px;
@@ -937,12 +955,12 @@
     grid-auto-flow: column;
     min-width: 300px;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     padding: 0;
     padding-bottom: 400px;
   }
 
-  .modal-quote-title-opt{
+  .modal-quote-title-opt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -950,7 +968,7 @@
     width: 100%;
   }
 
-  .quote-data-columns-opt{
+  .quote-data-columns-opt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -958,25 +976,25 @@
     gap: 5rem;
   }
 
-  .quote-data-opt >p{
-    max-width: 400px;
+  .quote-data-opt>p {
+    max-width: 300px;
     font-weight: 500;
   }
 
-  .data-column-opt{
+  .data-column-opt {
     justify-content: center;
     align-items: center;
   }
 
-  .column-opt-icon{
+  .column-opt-icon {
     width: 80px;
   }
 
-  .column-opt-title{
+  .column-opt-title {
     font-size: 1.5rem;
   }
 
-  .column-opt-quote{
+  .column-opt-quote {
     font-size: 1rem;
     font-weight: 500;
     max-width: 250px;
@@ -984,13 +1002,13 @@
 
   /* quote - form */
 
-  .modal-form-asesoria{
+  .modal-form-asesoria {
     padding-top: 400px;
   }
 
 
   .modal-form {
-    max-width: 400px;
+    max-width: 300px;
     top: -400px;
     left: 0;
   }
