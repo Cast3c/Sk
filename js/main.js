@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //=========TOGGLE-NAV=========//
   var navBtn = document.querySelector(".navbar-btn");
   var navMenu = document.querySelector(".nav-menu");
+  var widthView = window.innerWidth;
+
+  if (widthView <= 500) {
+    navMenu.addEventListener("click", function () {
+      navMenu.style.display = "none";
+    });
+  }
   navBtn.addEventListener("click", function (event) {
     event.preventDefault();
     if (navMenu.style.display === "flex") {
@@ -12,9 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  navMenu.addEventListener("click", function () {
-    navMenu.style.display = "none";
-  });
+  
 
   //=========MODALES=========//
 
