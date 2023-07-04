@@ -126,6 +126,7 @@ button {
     align-items: center;
     gap: 2rem;
     padding-left: 3rem;
+    z-index: 1;
 }
 
 .nav-logo {
@@ -1309,10 +1310,11 @@ button {
     /*========= MAPA Y TEL =========*/
 
     .telefonos-container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        flex-direction:row;
         max-width: 300px;
         justify-content: center;
+        align-items: center;
     }
 
     .telefonos-map{
@@ -1332,11 +1334,10 @@ button {
     }
 
     .telefonos-numeros{
-        margin-top: 1rem;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0;
+        margin-top: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
     .clientes-container{

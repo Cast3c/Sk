@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  
-
   //=========MODALES=========//
 
   var modalBtn1 = document.querySelector(".modal-btn1");

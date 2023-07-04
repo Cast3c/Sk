@@ -318,8 +318,9 @@ button {
 
 .form-title {
     padding-top: 2.5rem;
-    color: var(--text-color);
+    color: var(--green3);
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .form-data {
@@ -412,5 +413,6 @@ button {
     .form-title {
         max-width: 300px;
         text-align: center;
+        font-size: 1rem;
     }
 }

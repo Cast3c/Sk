@@ -183,7 +183,7 @@
 
 .modal-close {
   position: absolute;
-  top: -7.5rem;
+  top: -7.8rem;
   right: 5rem;
   font-size: 2rem;
   background-color: var(--green5);
@@ -191,7 +191,7 @@
   border-radius: 30px 30px 0 0;
   text-decoration: none;
   color: var(--blanco);
-  z-index: 0;
+  z-index: -1;
 }
 
 .modal-close:hover {
@@ -699,8 +699,9 @@
 
 .form-title {
   padding-top: 2.5rem;
-  color: var(--text-color);
+  color: var(--green3);
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .form-data {
@@ -754,7 +755,7 @@
   }
 
   .modal-close {
-    position:sticky;
+    position: sticky;
     right: 20px;
     width: 40px;
     height: 40px;
@@ -770,7 +771,7 @@
     border: 1px solid var(--green1);
   }
 
-  .modal-close .fa-xmark{
+  .modal-close .fa-xmark {
     background-color: transparent;
   }
 
@@ -1014,6 +1015,9 @@
   }
 
   .form-title {
+    max-width: 300px;
     text-align: center;
-  }
+    font-size: 1rem;
+    text-align: center;
+}
 }
