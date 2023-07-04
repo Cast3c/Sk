@@ -1310,11 +1310,11 @@ button {
     /*========= MAPA Y TEL =========*/
 
     .telefonos-container{
-        display: grid;
-        flex-direction:row;
+        display: flex;
+        flex-direction:column;
         max-width: 300px;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items:flex-start;
     }
 
     .telefonos-map{
@@ -1334,10 +1334,10 @@ button {
     }
 
     .telefonos-numeros{
-        margin-top: 0;
-        display: grid;
-        justify-content: center;
-        align-items: center;
+        padding-top: 1rem;
+        display:flex;
+        justify-content: start;
+        align-items: start;
     }
 
     .clientes-container{
