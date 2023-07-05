@@ -854,11 +854,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .modal-proceso1-quote-img {
-    width: 150px;
+    padding: 0.5rem;
+    width: 80px;
   }
 
   .modal-proceso1-quote-opt {

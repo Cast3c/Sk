@@ -607,7 +607,6 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 120vh;
     z-index: 0;
 }
 
@@ -757,7 +756,8 @@ button {
 /*====== CONTACTO ======*/
 
 .contacto-container {
-    margin-top: -18rem;
+    padding-top: 1rem;
+    /* margin-top: -15rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -1288,10 +1288,12 @@ button {
     /* ====== CONTACTO ====== */
 
     .contacto-container {
+        padding-top: 5rem;
         margin-top: -15rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
+
     }
 
     .contacto-data{
