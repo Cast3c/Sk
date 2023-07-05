@@ -702,6 +702,7 @@
   color: var(--green3);
   font-weight: 700;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .form-data {
@@ -837,9 +838,23 @@
     height: auto;
   }
 
+  .modal-proceso1-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .modal-proceso1-opt {
     max-height: none;
     padding: 0.5rem;
+  }
+
+  .modal-proceso1-quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
   }
 
   .modal-proceso1-quote-img {
@@ -854,17 +869,16 @@
   .modal-proceso1 {
     display: grid;
     justify-content: center;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 1fr;
     position: relative;
     z-index: 999;
-    max-height: none;
-    gap: 2rem;
+    max-height: fit-content;
+    gap: 0rem;
   }
 
   .modal-proceso1-divisor {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     transform: rotate(90deg);
@@ -1007,7 +1021,7 @@
   /* quote - form */
 
   .modal-form-asesoria {
-    padding-top: 400px;
+    padding-top: 0;
   }
 
 
