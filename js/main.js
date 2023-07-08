@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navMenu.style.display = "none";
     });
   }
-  navBtn.addEventListener("click", function (event) {
-    event.preventDefault();
+  navBtn.addEventListener("click", function () {
     if (navMenu.style.display === "flex") {
       navMenu.style.display = "none";
     } else {
@@ -49,13 +48,26 @@ document.addEventListener("DOMContentLoaded", function () {
   var overlaySenales = document.querySelector(".overlay-senales");
   var overlayAlimentos = document.querySelector(".overlay-alimentos");
   var overlayAsesorias = document.querySelector(".overlay-asesorias");
+  var containerTanques = document.querySelector(".container-tanques");
+  var containerFumigacion = document.querySelector(".container-fumigacion");
+  var containerDesinfeccion = document.querySelector(".container-desinfeccion");
+  var containerTrampas = document.querySelector(".container-trampas");
+  var containerSenales = document.querySelector(".container-senales");
+  var containerAlimentos = document.querySelector(".container-alimentos");
+  var containerAsesorias = document.querySelector(".container-asesorias");
   var body = document.querySelector("body");
+
+  function resetModal(nameModal, containerModal) {
+    nameModal.scrollTop = 0;
+    containerModal.scrollTop = 0;
+  }
 
   modalBtn1.addEventListener("click", function (event) {
     event.preventDefault();
     modalTanques.style.display = "flex";
     overlayTanques.style.display = "block";
     body.style.overflow = "hidden";
+    containerTanques.style.display = "grid";
   });
 
   modalBtn2.addEventListener("click", function (event) {
@@ -63,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalFumigacion.style.display = "flex";
     overlayFumigacion.style.display = "block";
     body.style.overflow = "hidden";
+    containerFumigacion.style.display = "grid";
   });
 
   modalBtn3.addEventListener("click", function (event) {
@@ -70,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalDesinfeccion.style.display = "flex";
     overlayDesinfeccion.style.display = "block";
     body.style.overflow = "hidden";
+    containerDesinfeccion.style.display = "grid";
   });
 
   modalBtn4.addEventListener("click", function (event) {
@@ -77,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalTrampas.style.display = "flex";
     overlayTrampas.style.display = "block";
     body.style.overflow = "hidden";
+    containerTrampas.style.display = "grid";
   });
 
   modalBtn5.addEventListener("click", function (event) {
@@ -84,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalSenales.style.display = "flex";
     overlaySenales.style.display = "block";
     body.style.overflow = "hidden";
+    containerSenales.style.display = "grid";
   });
 
   modalBtn6.addEventListener("click", function (event) {
@@ -91,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalAlimentos.style.display = "flex";
     overlayAlimentos.style.display = "block";
     body.style.overflow = "hidden";
+    containerAlimentos.style.display = "grid";
   });
 
   modalBtn7.addEventListener("click", function (event) {
@@ -98,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalAsesorias.style.display = "flex";
     overlayAsesorias.style.display = "block";
     body.style.overflow = "hidden";
+    containerAsesorias.style.display = "grid";
   });
 
   modalClose1.addEventListener("click", function (event) {
@@ -105,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalTanques.style.display = "none";
     overlayTanques.style.display = "none";
     body.style.overflow = "auto";
+    containerTanques.style.display = "none";
   });
 
   modalClose2.addEventListener("click", function (event) {
@@ -112,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalFumigacion.style.display = "none";
     overlayFumigacion.style.display = "none";
     body.style.overflow = "auto";
+    containerFumigacion.style.display = "none";
   });
 
   modalClose3.addEventListener("click", function (event) {
@@ -119,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalDesinfeccion.style.display = "none";
     overlayDesinfeccion.style.display = "none";
     body.style.overflow = "auto";
+    containerDesinfeccion.style.display = "none";
   });
 
   modalClose4.addEventListener("click", function (event) {
@@ -126,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalTrampas.style.display = "none";
     overlayTrampas.style.display = "none";
     body.style.overflow = "auto";
+    containerTrampas.style.display = "none";
   });
 
   modalClose5.addEventListener("click", function (event) {
@@ -133,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalSenales.style.display = "none";
     overlaySenales.style.display = "none";
     body.style.overflow = "auto";
+    containerSenales.style.display = "none";
   });
 
   modalClose6.addEventListener("click", function (event) {
@@ -140,6 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalAlimentos.style.display = "none";
     overlayAlimentos.style.display = "none";
     body.style.overflow = "auto";
+    containerAlimentos.style.display = "none";
   });
 
   modalClose7.addEventListener("click", function (event) {
@@ -147,55 +171,73 @@ document.addEventListener("DOMContentLoaded", function () {
     modalAsesorias.style.display = "none";
     overlayAsesorias.style.display = "none";
     body.style.overflow = "auto";
+    containerAsesorias.style.display = "none";
   });
 
   overlayTanques.addEventListener('click', function(event){
     event.preventDefault();
+    resetModal(modalTanques, containerTanques)
     modalTanques.style.display = 'none';
     overlayTanques.style.display = 'none';
     body.style.overflow = 'auto';
+    containerTanques.style.display = "none";
   })
 
   overlayFumigacion.addEventListener('click', function(event){
     event.preventDefault();
+    resetModal(modalFumigacion, containerFumigacion)
     modalFumigacion.style.display = 'none';
     overlayFumigacion.style.display = 'none';
     body.style.overflow = 'auto';
+    containerFumigacion.style.display = "none";
   })
 
   overlayDesinfeccion.addEventListener('click', function(event){
     event.preventDefault();
+    resetModal(modalDesinfeccion, containerFumigacion)
     modalDesinfeccion.style.display = 'none';
     overlayDesinfeccion.style.display = 'none';
     body.style.overflow = 'auto';
+    containerDesinfeccion.style.display = "none";
   })
 
   overlayTrampas.addEventListener('click', function(event){
     event.preventDefault();
+    resetModal(modalTrampas, containerTrampas)
     modalTrampas.style.display = 'none';
     overlayTrampas.style.display = 'none';
     body.style.overflow = 'auto';
+    containerTrampas.style.display = "none";
+    
   })
 
   overlaySenales.addEventListener('click', function(event){
     event.preventDefault();
+    resetModal(modalSenales, containerSenales)
     modalSenales.style.display = 'none';
     overlaySenales.style.display = 'none';
     body.style.overflow = 'auto';
+    containerSenales.style.display = "none";
+    
   })
 
   overlayAlimentos.addEventListener('click', function(event){
     event.preventDefault();
+    resetModal(modalAlimentos, containerAlimentos)
     modalAlimentos.style.display = 'none';
     overlayAlimentos.style.display = 'none';
     body.style.overflow = 'auto';
+    containerAlimentos.style.display = "none";
   })
 
   overlayAsesorias.addEventListener('click', function(event){
     event.preventDefault();
+    resetModal(modalAsesorias, containerAsesorias)
     modalAsesorias.style.display = 'none';
     overlayAsesorias.style.display = 'none';
     body.style.overflow = 'auto';
+    containerAsesorias.style.display = "none";
+    
   })
 
   //=========+++++++=========//

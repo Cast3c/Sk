@@ -157,16 +157,15 @@ button {
 }
 
 .quote-header-right-data>p {
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 700;
+    color: rgba(1, 1, 1, 0.5);
 }
 
 .quote-header-right-data>a {
     background-color: var(--green5);
     color: var(--green1);
     text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 700;
     padding: 0.4rem 3rem;
     border-radius: 25px;
 }
@@ -321,6 +320,8 @@ button {
     color: var(--green3);
     font-weight: 700;
     font-size: 1.5rem;
+    max-width: 500px;
+    text-align: center;
 }
 
 .form-data {

@@ -33,14 +33,16 @@
 }
 
 
-.overlay-tanques {
-  position: fixed;
+.overlay-tanques {  
+  position: sticky;
   top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9;
   display: none;
 }
 
@@ -51,7 +53,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9;
   display: none;
 }
 
@@ -62,7 +64,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9;
   display: none;
 }
 
@@ -73,7 +75,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9;
   display: none;
 }
 
@@ -84,7 +86,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9;
   display: none;
 }
 
@@ -95,7 +97,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9;
   display: none;
 }
 
@@ -106,13 +108,14 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9;
   display: none;
 }
 
 .modal-tanques {
   display: none;
   overflow: auto;
+  
 }
 
 .modal-fumigacion {
@@ -155,6 +158,60 @@
   height: 100vh;
 }
 
+.container-tanques{
+  padding: 4rem 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.container-fumigacion{
+  padding: 4rem 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.container-desinfeccion{
+  padding: 4rem 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.container-trampas{
+  padding: 4rem 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.container-senales{
+  padding: 4rem 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.container-alimentos{
+  padding: 4rem 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.container-asesorias{
+  padding: 4rem 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
 .modal-content {
   display: flex;
   flex-direction: column;
@@ -173,11 +230,11 @@
   color: var(--green1);
   border-radius: 50px;
   padding: 20px 20px 100px 20px;
-  font-size: 700;
   font-size: 2.5rem;
   font-family: 'Roboto black';
   position: relative;
   background-color: var(--green5);
+  width: 936px;
   max-width: 936px;
 }
 
@@ -209,9 +266,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  padding: 3rem;
+  padding: 3rem 3rem 3rem 3rem;
   gap: 50px;
   max-width: 936px;
+  height: min-content;
 }
 
 .section-modal {
@@ -251,24 +309,24 @@
 }
 
 .modal-quote1 {
-  color: var(--text-color);
   max-width: 400px;
-  font-weight: 500;
+  font-weight: 700;
+  color: rgba(1, 1, 1, 0.5);
   text-align: justify;
 }
 
 .modal-quote2 {
   color: var(--green3);
   max-width: 330px;
-  font-size: 0.8rem;
-  text-align: justify;
+  font-weight: 700;
+  text-align: center;
   font-style: oblique;
 }
 
 .modal-quote3-contain {
   position: relative;
   width: fit-content;
-  height: min-content;
+  /* height: min-content; */
   border: 3px solid var(--green1);
   display: grid;
   justify-content: center;
@@ -399,6 +457,7 @@
   padding: 0 2.5rem;
   color: var(--blanco);
   font-size: 0.8rem;
+  font-weight: 500;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -543,7 +602,7 @@
 }
 
 .modal-quote-data {
-  font-size: 0.7rem;
+  font-weight: 700;
   max-width: 400px;
   display: grid;
   justify-content: center;
@@ -568,7 +627,7 @@
   justify-content: center;
   align-items: center;
   row-gap: 2rem;
-  padding: 20px 60px;
+  padding: 50px 100px;
   border-top: 2px solid var(--green3);
   min-width: 840px;
   position: relative;
@@ -607,11 +666,16 @@
   text-align: center;
 }
 
+.quote-data-opt > p{
+  font-weight: 700;
+  color: rgba(1, 1, 1, 0.5);
+}
+
 .quote-data-opt1 {
   text-align: center;
   color: var(--green3);
   font-style: oblique;
-  font-size: 0.8rem;
+  
   font-weight: 700;
   max-width: 500px;
 }
@@ -657,7 +721,7 @@
 
 .column-opt-quote {
   color: var(--text-color);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   display: grid;
   justify-content: start;
   align-items: start;
@@ -694,6 +758,7 @@
   align-items: center;
   flex-direction: column;
   min-width: 300px;
+  height: min-content;
   gap: 2.5rem;
 }
 
@@ -703,6 +768,7 @@
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
+  max-width: 500px;
 }
 
 .form-data {
@@ -749,16 +815,58 @@
 /*============= BREAKPOINTS ============*/
 
 @media screen and (max-width: 480px) {
-  .title {
+
+  .container-tanques{
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .container-fumigacion{
+    width: 320px;
+    padding: 0;
+  }
+
+  .container-desinfeccion{
     width: 100%;
+    padding: 0;
+  }
+
+  .container-trampas{
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-senales{
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-alimentos{
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-asesorias{
+    width: 100%;
+    padding: 0;
+  }
+  
+  .title {
+    width: 320px;
     max-width: 400px;
     text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 10rem;
+  }
+
+  .title > h2{
+    font-size: 1.1rem;
   }
 
   .modal-close {
     position: sticky;
-    top: 0;
-    bottom: 0;
+    top: 1rem;
+    bottom: 0px;
     right: 20px;
     left: 0;
     width: 40px;
@@ -782,6 +890,9 @@
   .modal-data {
     width: 100%;
     max-width: 400px;
+    top: 70px;
+    
+    /* padding-bottom: -400px !important; */
   }
 
   .modal-header {
@@ -792,7 +903,16 @@
   }
 
   .left-header-modal {
-    max-width: 300px;
+    width: 300px;
+    max-width: 500px;
+    padding: 0;
+    object-fit: cover;
+  }
+
+  .left-header-modal > img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .modal-header-data {
@@ -835,7 +955,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: auto;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: -400px;
   }
 
   .modal-proceso1-data{
@@ -941,7 +1063,7 @@
     min-width: 300px;
     grid-template-columns: repeat(1, 1fr);
     left: 0;
-    top: -400px;
+    padding-top: -400px;
   }
 
   .modal-quote-title {
@@ -976,6 +1098,7 @@
     width: 100%;
     max-width: 300px;
     margin-top: 4rem;
+    top: 400px;
     padding-bottom: 400px;
   }
 
@@ -992,7 +1115,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5rem;
+    row-gap: 2rem;
+    padding: 3rem 1rem;
+  }
+
+  .quote-data-opt{
+    row-gap: 1rem;
   }
 
   .quote-data-opt>p {
@@ -1019,23 +1147,22 @@
     max-width: 250px;
   }
 
+
   /* quote - form */
 
   .modal-form-asesoria {
     padding-top: 0;
   }
 
-
   .modal-form {
     max-width: 300px;
-    top: -400px;
     left: 0;
+    padding: 0.5rem;
   }
 
   .form-title {
     max-width: 300px;
     text-align: center;
     font-size: 1rem;
-    text-align: center;
 }
 }

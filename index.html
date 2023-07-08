@@ -58,12 +58,13 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
-        <a href="https://api.whatsapp.com/send?phone=573005061291" target="_blank" class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+        
     </header>
     <!--========= MAIN =========-->
     <main class="main">
+        <a href="https://api.whatsapp.com/send?phone=573005061291" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+        </a>
         <!--========= HOME =========-->
         <section class="home section" id="home">
             <div class="home-container container">
@@ -304,10 +305,8 @@
                     </div>
                 </div>
             </div>
-            
         </section>
         <!--========= CONTACTO =========-->
-        
         <section class="contacto section" id="contacto">
             <div id=""></div>
             <div class="contacto-container container" >
@@ -336,7 +335,7 @@
                         <p>Estamos listos para brindar soluciones a tus requerimientos. Regístrate y nos pondremos en contacto contigo.</p>
                     </div>
                 </div>
-                <div class="contacto-form" id="">
+                <div class="contacto-form" >
                     <form action="mail.php" method="POST">
                         <input class="input" type="text" name="nombre" id="name" placeholder="Nombre o empresa:*">
                         <input class="input" type="tel" name="telefono" id="tel" placeholder="Celular:*">
@@ -532,7 +531,7 @@
     <div class="overlay-alimentos"></div>
     <div class="overlay-asesorias"></div>
     <!-- modal tanques -->
-    <div id="modal-tanques" class="modal-tanques modal-overlay container">
+    <div id="modal-tanques" class="modal-tanques modal-overlay container-tanques">
         <div class="modal-content">
             <div class="title">
                 <h2>LAVADO Y DESINFECCIÓN DE TANQUES:</h2>
@@ -656,26 +655,27 @@
                 </section>
                 <!-- MODAL FORM -->
                 <section class="section-modal modal-form">
-                    <div class="formulario-container">
-                        <div class="form-container">
-                            <div class="form-title">
-                                <span>¡Estamos a un <span style="font-style: italic;">click</span> de distancia! Contáctanos y descubre cómo podemos ayudarte</span>
-                            </div>
-                            <form action="mail.php" method="POST" class="form-data">
-                                <input type="text" name="nombre" id="" placeholder="Nombre o empresa:*">
-                                <input type="email" name="correo" id="" placeholder="Correo electrónico:*">
-                                <input type="tel" name="telefono" id="" placeholder="Celular:*">
-                                <textarea name="" id="asunto" cols="30" rows="10" placeholder="Mensaje:*"></textarea>
-                                <button type="submit" class="submit">ENVIAR</button>
-                            </form>
+                    <div class="form-container">
+                        <div class="form-title">
+                            <span>¡Estamos a un <span style="font-style: italic;">click</span> de distancia! Contáctanos y descubre cómo podemos ayudarte</span>
                         </div>
+                        <form action="mail.php" method="POST" class="form-data">
+                            <input type="text" name="nombre" id="" placeholder="Nombre o empresa:*">
+                            <input type="email" name="correo" id="" placeholder="Correo electrónico:*">
+                            <input type="tel" name="telefono" id="" placeholder="Celular:*">
+                            <textarea name="" id="asunto" cols="30" rows="10" placeholder="Mensaje:*"></textarea>
+                            <button type="submit" class="submit">ENVIAR</button>
+                        </form>
                     </div>
+                    <!-- <div class="formulario-container">
+                        
+                    </div> -->
                 </section>
             </div>
         </div>
     </div>
     <!-- modal fumigaciones -->
-    <div id="modal-fumigacion" class="modal-fumigacion modal-overlay container">
+    <div id="modal-fumigacion" class="modal-fumigacion modal-overlay container-fumigacion">
         <div class="modal-content">
             <div class="title">
                 <h2>FUMIGACIÓN</h2>
@@ -807,7 +807,7 @@
         </div>
     </div>
     <!-- modal desinfeccion -->
-    <div id="modal-desinfeccion" class="modal-desinfeccion modal-overlay container">
+    <div id="modal-desinfeccion" class="modal-desinfeccion modal-overlay container-desinfeccion">
         <div class="modal-content">
             <div class="title">
                 <h2>DESINFECCIÓN</h2>
@@ -903,7 +903,7 @@
                     <div class="formulario-container">
                         <div class="form-container">
                             <div class="form-title">
-                                <span>Déjanos tu mensaje, nos contáctaremos lo antes posible.</span>
+                                <span>¡Estamos a un <span style="font-style: italic;">click</span> de distancia! Contáctanos y descubre cómo podemos ayudarte</span>
                             </div>
                             <form action="mail.php" method="POST" class="form-data">
                                 <input type="text" name="nombre" id="" placeholder="Nombre o empresa:*">
@@ -919,7 +919,7 @@
         </div>
     </div>
     <!-- modal trampas -->
-    <div id="modal-trampas" class="modal-trampas modal-overlay container">
+    <div id="modal-trampas" class="modal-trampas modal-overlay container-trampas">
         <div class="modal-content">
             <div class="title">
                 <h2>LIMPIEZA POZO SÉPTICO Y TRAMPAS DE GRASA</h2>
@@ -998,7 +998,7 @@
         </div>
     </div>
     <!-- modal senales -->
-    <div id="modal-senales" class="modal-senales modal-overlay container">
+    <div id="modal-senales" class="modal-senales modal-overlay container-senales">
         <div class="modal-content">
             <div class="title">
                 <h2>SEÑALIZACIÓN PROFESIONAL ESPACIOS SEGUROS:</h2>
@@ -1057,7 +1057,7 @@
         </div>
     </div>
     <!-- modal alimentos -->
-    <div id="modal-alimentos" class="modal-alimentos modal-overlay container">
+    <div id="modal-alimentos" class="modal-alimentos modal-overlay container-alimentos">
         <div class="modal-content">
             <div class="title">
                 <h2>MANIPULACIÓN DE ALIMENTOS</h2>
@@ -1165,7 +1165,7 @@
                                         Certificación por<br> módulo cursado y<br> aprobado.
                                     </div>
                                     <div class="column-opt-quote">
-                                        <span class="complete-text-opt">
+                                        <span class="complete-text-opt" style="display: none;">
                                             Ofrecemos modalidades de
                                             capacitación presencial o
                                         </span>
@@ -1199,7 +1199,7 @@
         </div>
     </div>
     <!-- modal asesorias -->
-    <div id="modal-asesorias" class="modal-asesorias modal-overlay container">
+    <div id="modal-asesorias" class="modal-asesorias modal-overlay container-asesorias">
         <div class="modal-content">
             <div class="title">
                 <h2>ASESORÍAS AMBIENTALES</h2>
