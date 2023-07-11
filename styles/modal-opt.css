@@ -1365,6 +1365,7 @@
         z-index: 999;
         max-height: 100%;
         width: 100%;
+        min-width: 300px;
     }
 
     .modal-proceso1-divisor {
@@ -1379,6 +1380,7 @@
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
+
     }
 
     .modal-proceso1-divisor>img {
