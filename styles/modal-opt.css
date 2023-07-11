@@ -1363,7 +1363,7 @@
         grid-template-columns: 1fr;
         position: relative;
         z-index: 999;
-        max-height: 100%;
+        max-height: fit-content;
         width: 100%;
         min-width: 300px;
     }
