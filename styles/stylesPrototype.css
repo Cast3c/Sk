@@ -1057,7 +1057,7 @@ button {
 /*============= BREAKPOINTS ============*/
 
 /* for small devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
 
     /* ====== HEADER ====== */
     .header {
@@ -1302,9 +1302,9 @@ button {
 
     .contacto-container {
         position: relative;
-        top: 1rem;
+        top: 2rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
 
     }
