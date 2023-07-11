@@ -34,7 +34,7 @@
 
 
 .overlay-tanques {
-    position: sticky;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -99,6 +99,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9;
     display: none;
+    overflow-x: hidden;
 }
 
 .overlay-asesorias {
@@ -110,6 +111,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9;
     display: none;
+    
 }
 
 .modal-tanques {
@@ -1131,12 +1133,12 @@
 @media screen and (max-width: 480px) {
 
     .container-tanques {
-        min-width: 100%;
+        width: 100%;;
         padding: 0;
     }
 
     .container-fumigacion {
-        width: 320px;
+        width: 100%;
         padding: 0;
     }
 
@@ -1158,6 +1160,7 @@
     .container-alimentos {
         width: 100%;
         padding: 0;
+        overflow-x: hidden;
     }
 
     .container-asesorias {
@@ -1496,7 +1499,6 @@
         align-items: center;
         grid-auto-flow: column;
         min-width: 300px;
-        width: 100%;
         max-width: 300px;
         margin-top: 4rem;
         top: 400px;
