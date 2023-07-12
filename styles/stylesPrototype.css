@@ -53,7 +53,6 @@ a {
     cursor: pointer;
 }
 
-
 img {
     object-fit: cover;
     max-width: 100%;
@@ -1035,6 +1034,13 @@ button {
     justify-content: flex-start;
     align-items: center;
     gap: 0.7rem;
+}
+
+.footer-item > a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 1rem;
 }
 
 .itemIconFooter {
