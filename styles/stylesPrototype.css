@@ -190,7 +190,7 @@ button {
 
 /* ========= HOME ========= */
 .home {
-    background-image: url('../Recursos\ Pag\ WEB\ SK/Fotos-optimized/background-home.jpg');
+    background-image: url('../media/background-home.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
